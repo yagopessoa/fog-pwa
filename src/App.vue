@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar dark class="primary">
+    <v-toolbar fixed dark class="primary">
       <v-toolbar-side-icon 
         @click="sideNav = !sideNav" 
         class="hidden-sm-and-up"
@@ -22,6 +22,7 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
+    <v-toolbar />
 
     <v-navigation-drawer absolute temporary v-model="sideNav" class="hidden-sm-and-up">
       <v-list>
@@ -44,20 +45,21 @@
 </template>
 
 <script>
-// links should point to a section and not a route
-export default {
-  data () {
-    return {
-      sideNav: false,
-      menuItems: [
-        { title: 'Sobre', link: '/sobre' },
-        { title: 'Projetos', link: '/projetos' },
-        { title: 'Contato', link: '/contato' }
-      ]
-    }
-  },
-  name: 'app'
-}
+  export default {
+    data () {
+      return {
+        sideNav: false,
+        menuItems: [
+          { title: 'Sobre', link: '/sobre' },
+          { title: 'Jogos', link: '/jogos' },
+          { title: 'Eventos', link: '/eventos' },
+          { title: 'Rádio', link: '/radio' },
+          { title: 'Faça parte', link: '/psel' }
+        ]
+      }
+    },
+    name: 'app'
+  }
 </script>
 
 <style>

@@ -1,14 +1,7 @@
 <template>
-  <v-container fluid>
-    <v-layout row wrap>
-      <v-flex xs12 sm8 md6>
-        oi
-      </v-flex>
-      <v-flex xs12 sm8 md6>
-        tchau
-      </v-flex>
-    </v-layout>
-  </v-container>
+  <div>
+    Home
+  </div>
 </template>
 
 <script>
