@@ -3,7 +3,7 @@
     <v-toolbar fixed dark class="primary">
       <v-toolbar-side-icon 
         @click="sideNav = !sideNav" 
-        class="hidden-sm-and-up"
+        class="hidden-md-and-up"
       />
       <v-toolbar-title>
         <router-link to="/" tag="span" style="cursor:pointer" >
@@ -11,7 +11,7 @@
         </router-link>
       </v-toolbar-title>
       <v-spacer />
-      <v-toolbar-items class="hidden-xs-only">
+      <v-toolbar-items class="hidden-xs-only hidden-sm-only">
         <v-btn 
           flat
           v-for="item in menuItems"
