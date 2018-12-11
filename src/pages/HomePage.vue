@@ -1,6 +1,6 @@
 <template>
   <div id="start">
-    <v-parallax class="parallax" src="https://culturaalternativa.com.br/wp-content/uploads/2017/11/background-clean.jpg">
+    <v-parallax class="parallax" src="https://i.ibb.co/pQBj77p/bg2.jpg">
       <div class="upper-session">
         <v-container grid-list-md text-xs-center>
           <v-layout hidden-xs-only row wrap>
@@ -72,7 +72,7 @@ export default {
     align-items: center;
   }
   .expand-btn{
-    margin-top: 32px;
+    margin-top: 48px;
   }
   .bottom-session{
     height: 100vh;
@@ -84,6 +84,7 @@ export default {
   }
   .parallax{
     min-height: calc(100vh - 60px);
+    object-fit: cover;
   }
 
   @media screen and (max-height: 959px) {
