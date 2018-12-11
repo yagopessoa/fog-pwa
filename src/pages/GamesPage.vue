@@ -14,18 +14,22 @@
                     <v-img
                         :src="game.cover_url"
                         height="300px"
+                        class="img"
                     ></v-img>
 
                     <v-card-title primary-title>
                         <div>
                             <h3 class="headline mb-0">{{game.title}}</h3>
                             <div v-if="game.short_text">{{game.short_text}}</div>
-                            <div v-else><i>No description.</i></div>
+                            <div v-else><i>Sem descrição.</i></div>
                         </div>
                     </v-card-title>
 
                     <v-card-actions>
-                        <v-btn flat color="primary">Visitar</v-btn>
+                        <v-btn :href="game.url" target="_blank" flat color="primary">
+                          Visitar página
+                          <v-icon right>open_in_new</v-icon>
+                        </v-btn>
                     </v-card-actions>
                 </v-card>
             </v-flex>
@@ -72,5 +76,8 @@
     align-items: center;
     justify-content: center;
     height: 80vh;
+  }
+  .img{
+    min-width: 288px;
   }
 </style>
