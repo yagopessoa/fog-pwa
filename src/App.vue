@@ -52,8 +52,10 @@
         menuItems: [
           { title: 'Sobre', link: '/sobre' },
           { title: 'Jogos', link: '/jogos' },
-          { title: 'Eventos', link: '/eventos' },
           { title: 'Rádio', link: '/radio' },
+          { title: 'Geléia', link: '/geleia' },
+          { title: 'Disciplina', link: '/disciplina' },
+          { title: 'Eventos', link: '/eventos' },
           { title: 'Faça parte', link: '/psel' }
         ]
       }
