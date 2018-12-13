@@ -21,6 +21,21 @@
           {{ item.title }}
         </v-btn>
       </v-toolbar-items>
+      <v-menu offset-y class="hidden-xs-only hidden-sm-only mr-4">
+        <v-btn color="accent" class="black--text" slot="activator">
+          Projetos
+        </v-btn>
+
+        <v-list>
+          <v-list-tile
+            v-for="item in dropdownItems"
+            :key="item.name"
+            :to="item.link"
+          >
+            <v-list-tile-title v-text="item.title"></v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
     </v-toolbar>
     <v-toolbar />
 
@@ -28,6 +43,18 @@
       <v-list>
         <v-list-tile 
           v-for="item in menuItems" 
+          :key="item.title"
+          :to="item.link"
+        >
+          <v-list-tile-content>
+            {{ item.title }}
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+      <v-divider />
+      <v-list>
+        <v-list-tile 
+          v-for="item in dropdownItems" 
           :key="item.title"
           :to="item.link"
         >
@@ -50,13 +77,15 @@
       return {
         sideNav: false,
         menuItems: [
-          { title: 'Sobre', link: '/sobre' },
+          { title: 'Quem somos', link: '/sobre' },
+          { title: 'Eventos', link: '/eventos' },
+          { title: 'Faça parte', link: '/psel' }
+        ],
+        dropdownItems: [
           { title: 'Jogos', link: '/jogos' },
           { title: 'Rádio', link: '/radio' },
           { title: 'Geléia', link: '/geleia' },
-          { title: 'Disciplina', link: '/disciplina' },
-          { title: 'Eventos', link: '/eventos' },
-          { title: 'Faça parte', link: '/psel' }
+          { title: 'Disciplina', link: '/disciplina' }
         ]
       }
     },

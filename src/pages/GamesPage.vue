@@ -1,5 +1,5 @@
 <template>
-  <v-layout>
+  <v-layout class="page">
     <v-flex xs12 sm10 offset-sm1>
         <v-container grid-list-lg fluid>
           <div v-if="loading" class="text-xs-center progress-div">
@@ -71,6 +71,10 @@
 </script>
 
 <style>
+  .page{
+    background-color: #ECEFF1;
+    min-height: 100vh;
+  }
   .progress-div{
     display: flex;
     align-items: center;

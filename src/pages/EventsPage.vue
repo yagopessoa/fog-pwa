@@ -1,3 +1,3 @@
 <template>
-  <h4>Eventos</h4>
+  <h1>Eventos</h1>
 </template>

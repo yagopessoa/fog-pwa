@@ -1,3 +1,3 @@
 <template>
-  <h4>Ptdc</h4>
+  <h1>Ptdc</h1>
 </template>

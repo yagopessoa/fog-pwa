@@ -1,3 +1,3 @@
 <template>
-  <h4>Geléia</h4>
+  <h1>Geléia</h1>
 </template>
