@@ -46,7 +46,7 @@
                 <img :src="card.iconPath" class="icon" alt="Ícone" />
                 <v-card-title primary-title>
                   <div>
-                    <h3 class="headline font-weight-medium mb-4 px-4">{{ card.title }}</h3>
+                    <h3 class="headline font-weight-medium mb-4 card-title">{{ card.title }}</h3>
                     <p class="subheading grey--text text--darken-3 px-1">{{ card.description }}</p>
                   </div>
                 </v-card-title>
@@ -128,9 +128,24 @@
     min-height: 450px;
     margin: 0px 16px;
   }
+  .card-title{
+    padding: 0px 48px;
+  }
   .icon{
     padding: 16px;
     margin-top: 24px;
+  }
+
+  @media screen and (max-width: 1355px) {
+    .card-title{
+      padding: 0px 16px;
+    } 
+  }
+
+  @media screen and (max-width: 1125px) {
+    .card-title{
+      padding: 0px 0px;
+    } 
   }
 
   @media screen and (max-height: 959px) {
