@@ -40,7 +40,7 @@
     </v-toolbar>
     <v-toolbar />
 
-    <v-navigation-drawer absolute temporary v-model="sideNav" class="hidden-sm-and-up">
+    <v-navigation-drawer fixed temporary v-model="sideNav" class="hidden-sm-and-up">
       <v-list>
         <v-list-tile 
           v-for="item in menuItems" 
