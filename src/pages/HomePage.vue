@@ -25,7 +25,7 @@
             </v-flex>
             <v-flex xs12 sm8>
               <div class="title-n-subtitle">
-                <p class="display-2">{{title}}</p>
+                <p class="display-2 mb-4">{{title}}</p>
                 <p class="subheading text-xs-justify">{{description}}</p>
               </div>
             </v-flex>
@@ -33,23 +33,60 @@
         </v-container>
       </div>
     </v-parallax>
+
     <div class="bottom-session" id="bottom">
+      <v-flex xs12 sm8 offset-sm2 md10 offset-md1>
+        <v-container fluid text-xs-center>
+          <p class="display-1 mt-4">O que fazemos?</p>
+        </v-container>
+        <v-container grid-list-lg fluid text-xs-center class="pb-5">
+          <v-layout row wrap>
+            <v-flex v-for="card in cardsContent" :key="card.title" xs12 md4>
+              <v-card class="card">
+                <img :src="card.iconPath" class="icon" alt="Ícone" />
+                <v-card-title primary-title>
+                  <div>
+                    <h3 class="headline font-weight-medium mb-4 px-4">{{ card.title }}</h3>
+                    <p class="subheading grey--text text--darken-3 px-1">{{ card.description }}</p>
+                  </div>
+                </v-card-title>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-flex>
     </div>
+
   </div>
 </template>
 
 <script>
-//  https://culturaalternativa.com.br/wp-content/uploads/2017/11/background-clean.jpg
-//  http://sanseverinocomunicacao.com.br/wp-content/uploads/2016/06/clean-white-polygon-backgrounds-7-copy.jpg
-export default {
-  name: 'HomePage',
-  data () {
-    return {
-      title: 'Fellowship of The Game',
-      description: 'Grupo de extensão vinculado ao ICMC - USP focado em desenvolvimento de jogos e na disseminação do conhecimento através de cursos e eventos abertos ao público.'
+  export default {
+    name: 'HomePage',
+    data () {
+      return {
+        title: 'Fellowship of The Game',
+        description: 'Grupo de extensão vinculado ao ICMC - USP focado em desenvolvimento de jogos e na disseminação do conhecimento através de cursos e eventos abertos ao público.',
+        cardsContent: [
+          {
+            title: 'Desenvolvimento de Jogos',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia ante quis aliquam varius. Cras at risus at nulla rhoncus aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+            iconPath: '/static/img/gamedev.png'
+          },
+          {
+            title: 'Disseminação de Conhecimento',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia ante quis aliquam varius. Cras at risus at nulla rhoncus aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+            iconPath: '/static/img/class.png'
+          },
+          {
+            title: 'Organização de Eventos',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia ante quis aliquam varius. Cras at risus at nulla rhoncus aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+            iconPath: '/static/img/events.png'
+          }
+        ]
+      }
     }
   }
-}
 </script>
 
 <style>
@@ -75,9 +112,10 @@ export default {
     margin-top: 48px;
   }
   .bottom-session{
-    height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     background-color: #F1CD36;
+    padding-top: 60px;
   }
   p{
     color: #000;
@@ -86,10 +124,21 @@ export default {
     min-height: calc(100vh - 60px);
     object-fit: cover;
   }
+  .card{
+    min-height: 450px;
+    margin: 0px 16px;
+  }
+  .icon{
+    padding: 16px;
+    margin-top: 24px;
+  }
 
   @media screen and (max-height: 959px) {
     .parallax{
       min-height: calc(100vh - 48px);
+    }
+    .bottom-session{
+      padding-top: 16px;
     }
   }
 
