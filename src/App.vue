@@ -21,9 +21,10 @@
           {{ item.title }}
         </v-btn>
       </v-toolbar-items>
-      <v-menu offset-y class="hidden-xs-only hidden-sm-only mr-4">
-        <v-btn color="accent" class="black--text" slot="activator">
-          Projetos
+      <v-menu offset-y class="hidden-xs-only hidden-sm-only mx-4">
+        <v-btn outline color="white" class="black--text" slot="activator">
+          <v-icon>expand_more</v-icon>
+          <div class="mr-2">Projetos</div>
         </v-btn>
 
         <v-list>
@@ -39,7 +40,7 @@
     </v-toolbar>
     <v-toolbar />
 
-    <v-navigation-drawer absolute temporary v-model="sideNav" class="hidden-sm-and-up">
+    <v-navigation-drawer fixed temporary v-model="sideNav" class="hidden-sm-and-up">
       <v-list>
         <v-list-tile 
           v-for="item in menuItems" 
