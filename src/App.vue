@@ -1,12 +1,12 @@
 <template>
-  <v-app>
+  <v-app id="home">
     <v-toolbar fixed dark class="primary">
       <v-toolbar-side-icon 
         @click="sideNav = !sideNav" 
         class="hidden-md-and-up"
       />
       <v-toolbar-title>
-        <router-link to="/" tag="span" style="cursor:pointer" >
+        <router-link to="/" @click="$vuetify.goTo('#home')" tag="span" style="cursor:pointer" >
           Fellowship of The Game
         </router-link>
       </v-toolbar-title>
@@ -66,8 +66,9 @@
       </v-list>
     </v-navigation-drawer>
     <main>
-      <router-view>
-      </router-view>
+      <transition name="slide-fade">
+        <router-view></router-view>
+      </transition>
     </main>
   </v-app>
 </template>
@@ -95,4 +96,11 @@
 </script>
 
 <style>
+  .slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(15px);
+    opacity: 0;
+  }
 </style>
