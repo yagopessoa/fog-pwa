@@ -70,17 +70,17 @@
         cardsContent: [
           {
             title: 'Desenvolvimento de Jogos',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia ante quis aliquam varius. Cras at risus at nulla rhoncus aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+            description: 'Desenvolvemos projetos de prototipação de jogos focado na aprendizagem de todo o processo de produção, onde programação, arte, música e coordenação se unem para alcançar as metas estipuladas. Uma vez finalizado, o jogo é publicado com acesso gratuito para toda comunidade.',
             iconPath: '/static/img/gamedev.png'
           },
           {
             title: 'Disseminação de Conhecimento',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia ante quis aliquam varius. Cras at risus at nulla rhoncus aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+            description: 'Com o intuito de levar o conhecimento adquirido por nossos membros para a comunidade, oferecemos regularmente minicursos oficializados pela USP sobre as mais diversas áreas de desenvolvimento de jogos. Eles são gratuitos e qualquer pessoa pode participar.',
             iconPath: '/static/img/class.png'
           },
           {
             title: 'Organização de Eventos',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia ante quis aliquam varius. Cras at risus at nulla rhoncus aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+            description: 'Com o objetivo de divulgar nosso grupo de extensão e nossos jogos, realizamos eventos como Playtest (para que todos possam jogar nossos jogos), Game Jams (maratonas de criação de jogos) e a anual USP Game Link, que além da tradicional Mostra de Jogos do ICMC, também traz palestras e conteúdo da área de game dev.',
             iconPath: '/static/img/events.png'
           }
         ]
@@ -127,10 +127,12 @@
   }
   .card{
     min-height: 450px;
+    height: 100%;
     margin: 0px 16px;
   }
   .card-title{
-    padding: 0px 48px;
+    padding: 0px 32px;
+    min-height: 64px;
   }
   .icon{
     padding: 16px;

@@ -25,7 +25,7 @@ export default new Router({
       component: GamesPage
     },
     {
-      path: '/radio',
+      path: '/podcast',
       name: 'PtdcPage',
       component: PtdcPage
     },
