@@ -54,5 +54,6 @@ export default new Router({
       name: 'AboutPage',
       component: AboutPage
     }
-  ]
+  ],
+  mode: 'history'
 })

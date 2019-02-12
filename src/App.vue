@@ -86,7 +86,7 @@
         dropdownItems: [
           { title: 'Jogos', link: '/jogos' },
           { title: 'Podcast', link: '/podcast' },
-          { title: 'Geléia', link: '/geleia' },
+          { title: 'Geleia', link: '/geleia' },
           { title: 'Disciplina', link: '/disciplina' }
         ]
       }
