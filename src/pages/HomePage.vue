@@ -114,8 +114,8 @@
   .bottom-session{
     /* min-height: 100vh; */
     width: 100%;
-    background-color: rgba(53, 74, 95, 0.3);
-    /* background-color: rgba(53,74,95, 0.3); */
+    background-color: rgba(53, 74, 95, 0.2);
+    /* background-color: rgba(53,74,95, 0.2); */
     padding-top: 60px;
   }
   p{

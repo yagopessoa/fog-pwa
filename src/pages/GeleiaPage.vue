@@ -1,35 +1,37 @@
 <template>
   <div>
-    <div class="upper-session">
-      <v-container grid-list-md text-xs-center>
+    <v-parallax class="parallax" src="https://i.ibb.co/pQBj77p/bg2.jpg">
+      <div class="upper-session">
+        <v-container grid-list-md text-xs-center>
 
-        <v-layout hidden-xs-only row wrap>
-          <v-flex xs12 md6>
-            <img src="@/assets/geleia.png" class="brasao" alt="Brasão" />
-          </v-flex>
-          <v-flex xs12 md6>
-            <div class="title-n-subtitle">
-              <p class="headline text-sm-justify ma-2">{{description}}</p>
-            </div>
-          </v-flex>
-        </v-layout>
+          <v-layout hidden-xs-only row wrap>
+            <v-flex xs12 md6>
+              <img src="@/assets/geleia.png" class="brasao" alt="Brasão" />
+            </v-flex>
+            <v-flex xs12 md6>
+              <div class="title-n-subtitle">
+                <p class="headline text-sm-justify ma-2 black--text">{{description}}</p>
+              </div>
+            </v-flex>
+          </v-layout>
 
-        <v-layout hidden-sm-and-up row wrap>
-          <v-flex xs12 sm4>
-            <img src="@/assets/geleia.png" class="brasao-small" alt="Brasão" />
-          </v-flex>
-          <v-flex xs12 sm8>
-            <div class="title-n-subtitle">
-              <p class="subheading text-xs-justify">{{description}}</p>
-            </div>
-          </v-flex>
-        </v-layout>
+          <v-layout hidden-sm-and-up row wrap>
+            <v-flex xs12 sm4>
+              <img src="@/assets/geleia.png" class="brasao-small" alt="Brasão" />
+            </v-flex>
+            <v-flex xs12 sm8>
+              <div class="title-n-subtitle">
+                <p class="subheading text-xs-justify black--text mb-4">{{description}}</p>
+              </div>
+            </v-flex>
+          </v-layout>
 
-      </v-container>
-    </div>
+        </v-container>
+      </div>
+    </v-parallax>
 
     <div class="bottom">
-      <p class="display-1 text-xs-center mt-2">Como funciona?</p>
+      <p class="display-1 text-xs-center mt-4">Como funciona?</p>
       <v-layout row wrap>
         <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
           <div class="title-n-subtitle">
@@ -99,6 +101,7 @@
     align-items: center;
   }
   .bottom{
+    background-color: rgba(53, 74, 95, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,11 +121,23 @@
   .brasao-small{
     max-width: 75%;
   }
+  .parallax{
+    min-height: calc(100vh - 60px);
+    object-fit: cover;
+  }
 
   @media screen and (max-width: 959px) {
     .title-n-subtitle{
       padding: 16px;
-    } 
+    }
+    .parallax{
+      min-height: calc(100vh - 48px);
+    }
+  }
+  @media screen and (max-height: 639px) {
+    .parallax{
+      min-height: calc(100vh);
+    }
   }
 </style>
 
