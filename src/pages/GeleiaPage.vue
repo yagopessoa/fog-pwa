@@ -4,12 +4,12 @@
       <v-container grid-list-md text-xs-center>
 
         <v-layout hidden-xs-only row wrap>
-          <v-flex xs12 md7 lg5>
+          <v-flex xs12 md6>
             <img src="@/assets/geleia.png" class="brasao" alt="Brasão" />
           </v-flex>
-          <v-flex xs12 md5 lg7>
+          <v-flex xs12 md6>
             <div class="title-n-subtitle">
-              <p class="headline text-sm-justify">{{description}}</p>
+              <p class="headline text-sm-justify ma-2">{{description}}</p>
             </div>
           </v-flex>
         </v-layout>
@@ -33,17 +33,17 @@
       <v-layout row wrap>
         <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
           <div class="title-n-subtitle">
-            <p class="subheading mb-2 text-xs-center">{{howItWorks1}}</p>
-            <p class="subheading mb-2 text-xs-center">{{howItWorks2}}</p>
-            <p class="subheading mb-4 text-xs-center">{{howItWorks3}}</p>
+            <p class="subheading mb-2 text-xs-justify">{{howItWorks1}}</p>
+            <p class="subheading mb-2 text-xs-justify">{{howItWorks2}}</p>
+            <p class="subheading mb-4 text-xs-justify">{{howItWorks3}}</p>
           </div>
         </v-flex>
       </v-layout>
 
       <v-layout row wrap>
-        <v-flex xs12 sm8 md6 offset-sm2 offset-md3>
+        <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
           <div class="title-n-subtitle">
-            <p class="headline mt-4 mb-4 text-xs-center">
+            <p class="subheading mt-3 mb-3 text-xs-justify">
               Gostou? Para saber mais, visite a <b><a href="https://fellowshipofthegame.github.io/receita-de-geleia/" target="_blank">Receita de Geleia</a></b> para dicas de como realizar sua primeira game jam, com fontes, ferramentas e muito mais!
             </p>
           </div>
