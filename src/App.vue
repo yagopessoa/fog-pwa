@@ -79,7 +79,7 @@
       return {
         sideNav: false,
         menuItems: [
-          { title: 'Quem somos', link: '/sobre' },
+          /* { title: 'Quem somos', link: '/sobre' }, */
           { title: 'Eventos', link: '/eventos' },
           { title: 'Faça parte', link: '/psel' }
         ],

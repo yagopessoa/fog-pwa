@@ -1,7 +1,9 @@
 <template>
   <div style="background-color: #ECEFF1;">
+
     <img src="@/assets/header-psel.png" class="logo hidden-xs-only hidden-sm-only" alt="Banner Choose Your Character" />
     <img src="@/assets/large-psel.jpg" class="logo hidden-md-and-up" alt="Banner Choose Your Character" />
+    
     <div class="page">
       <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4">
         Áreas de atuação do Fellowship of the Game
@@ -26,6 +28,44 @@
           </v-flex>
         </v-layout>
       </v-container>
+
+      <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4">
+        Etapas do Processo Seletivo
+      </p>
+      <v-container grid-list-md>
+        <v-layout row wrap>
+          <v-flex xs12>
+            <p class="subheading text-xs-justify mb-3 pa-2">
+              <b>Primeira Fase:</b> A Primeira Fase do PSel consiste em uma dinâmica a ser dividida em dois dias distintos de acordo com a disponibilidade do candidato. Você poderá participar no dia 16 ou 23 de março.
+            </p>
+
+            <p class="subheading text-xs-justify pa-2 mb-0">
+              <b>Segunda Fase:</b> Na Segunda Fase do PSel, o candidato terá um mês para desenvolver um projeto em uma área de sua escolha. Poderá criar um projeto de Gestão Geral, Gestão de Recursos Humanos, Programação, Jogo de Cartas ou Jogo de Tabuleiro, Música, Arte, Dublagem e Fotografia / Vídeo (Mídia).
+            </p>
+            <p class="subheading text-xs-justify pa-2 mb-0">
+              Durante este período, serão oferecidos inúmeros cursos que encobrem grande parte das áreas do Fellowship of the Game. Todos os cursos terão duração de 4 horas, das 14 às 18h do dia e recomendamos fortemente que participe daqueles que te interessarem mais. Valorizamos muito a proatividade e a curiosidade em aprender novas áreas.
+            </p>
+            <p class="subheading text-xs-justify mb-4 pa-2 mb-0">
+              Ainda no período da Segunda Fase, disponibilizaremos um grupo no WhatsApp com membros do FoG dispostos a auxiliar sanando tanto as dúvidas quanto ao PSel quanto as dúvidas relativas ao projeto sendo desenvolvido pelo candidato. Um link de acesso ao grupo será enviado por email a todos os que passarem na Primeira Fase.
+            </p>
+            
+          </v-flex>
+        </v-layout>
+      </v-container>
+
+      <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4">
+        Datas do Processo Seletivo
+      </p>
+      <ul>
+        <div class="pa-3">
+          <li class="subheading text-xs-justify pb-2 mb-0" v-for="date in dates" :key="date.text">
+            <p>
+              {{ date.text }}
+            </p>
+          </li>
+        </div>
+      </ul>
+
     </div>
   </div>
 </template>
@@ -90,6 +130,35 @@
             title: 'Arte',
             description: 'Arte, desenho, modelagem 3D e animações são só umas das coisas que um artista faz. A identidade visual do jogo é fundamental para criar uma ambientação que atrai e que deixa o jogo atraente.',
             img: 'art'
+          }
+        ],
+        dates: [
+          {
+            text: '18/02 – Início das Inscrições para a Primeira Fase'
+          },
+          {
+            text: '09/03 – Fechamento do Período de Inscrições'
+          },
+          {
+            text: '16/03 – Primeira Fase – Primeiro Dia'
+          },
+          {
+            text: '23/03 – Primeira Fase – Segundo Dia'
+          },
+          {
+            text: '06/04 – Resultados da Primeira Fase e Início da Segunda Fase'
+          },
+          {
+            text: '05/05 – Fim da Segunda Fase'
+          },
+          {
+            text: '18/05 - Resultado da Segunda Fase'
+          },
+          {
+            text: '01/06 – Início do Período de Treinamento dos Novos Membros'
+          },
+          {
+            text: '08/09 – Fim do Período de Treinamento dos Novos Membros'
           }
         ]
       }

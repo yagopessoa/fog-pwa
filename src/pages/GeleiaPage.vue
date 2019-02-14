@@ -80,13 +80,13 @@
         howItWorks3: 'Você pode ser um artista, um modelador 3D, um programador, um escritor, um designer, um compositor ou músico, ou mesmo só um curioso que quer aprender. Nós organizamos e participamos de jams como a Global Game Jam, Ludum Dare, Café Game Jam, Game Jam da Semcomp (Semana da computação do ICMC) e diversas outras game jams, organizadas quase que mensalmente durante todo o ano, PARTICIPE! ;)',
         items: [
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+            src: '/static/img/ggj_1.jpg'
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+            src: '/static/img/ggj_2.jpg'
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+            src: '/static/img/ggj_3.jpg'
           }
         ]
       }
