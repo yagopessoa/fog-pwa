@@ -66,6 +66,119 @@
         </div>
       </ul>
 
+      <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4">
+        Datas dos Minicursos
+      </p>
+      
+       <v-container grid-list-md>
+        <v-layout row wrap>
+          <v-flex xs12>
+            <v-timeline>
+              <v-timeline-item
+                key="a"
+                color="accent"
+                large
+              >
+                <v-card class="elevation-2">
+                  <v-card-title class="headline">06/04 (sábado)</v-card-title>
+                  <v-card-text>
+                    <ul>
+                      <li key="1">
+                        Arte Vetorial para Iniciantes (sala 5-003)
+                      </li>
+                      <li key="2">
+                        Composição de Trilhas Sonoras para Jogos v1 (sala 4-003)
+                      </li>
+                      <li key="3">
+                        Desenvolvendo um Jogo Shoot'em Up em Unity (sala 4-005)
+                      </li>
+                  </ul>
+                  </v-card-text>
+                </v-card>
+              </v-timeline-item>
+
+              <v-timeline-item
+                key="b"
+                color="indigo darken-4"
+                large
+              >
+                <v-card class="elevation-2">
+                  <v-card-title class="headline">07/04 (domingo)</v-card-title>
+                  <v-card-text>
+                    <ul>
+                      <li key="1">
+                        Arte 2D para Iniciantes (sala 5-001)
+                      </li>
+                      <li key="2">
+                        Introdução à Voxel Art (sala 4-003)
+                      </li>
+                      <li key="3">
+                        Introdução ao Desenvolvimento de Jogos em Godot (sala 4-005)
+                      </li>
+                      <li key="4">
+                        Modelagem 3D para Iniciantes v1 (sala 5-003)
+                      </li>
+                  </ul>
+                  </v-card-text>
+                </v-card>
+              </v-timeline-item>
+
+              <v-timeline-item
+                key="a"
+                color="accent"
+                large
+              >
+                <v-card class="elevation-2">
+                  <v-card-title class="headline">13/04 (sábado)</v-card-title>
+                  <v-card-text>
+                    <ul>
+                      <li key="1">
+                        Composição de Trilhas Sonoras para Jogos v2 (sala 4-003)
+                      </li>
+                      <li key="2">
+                        Desenvolvendo um Jogo de Plataforma em Unity (sala 4-005)
+                      </li>
+                      <li key="3">
+                        Introdução à Pixel Art (sala 5-001)
+                      </li>
+                      <li key="4">
+                        Pipeline de Produção para Jogos Digitais (sala 5-101)
+                      </li>
+                  </ul>
+                  </v-card-text>
+                </v-card>
+              </v-timeline-item>
+
+              <v-timeline-item
+                key="a"
+                color="indigo darken-4"
+                large
+              >
+                <v-card class="elevation-2">
+                  <v-card-title class="headline">14/04 (domingo)</v-card-title>
+                  <v-card-text>
+                    <ul>
+                      <li key="1">
+                        Design e Desenvolvimento de Jogos Analógicos (sala 4-003)
+                      </li>
+                      <li key="2">
+                        Gestão de Projeto e Pessoa para Jogos Digitais (sala 5-001)
+                      </li>
+                      <li key="3">
+                        Modelagem 3D para Iniciantes V2 (sala 5-003)
+                      </li>
+                      <li key="4">
+                        Unity Intermediário - Propriedades, Scriptable Objects e Eventos! (sala 4-005)
+                      </li>
+                  </ul>
+                  </v-card-text>
+                </v-card>
+              </v-timeline-item>
+            </v-timeline>
+          </v-flex>
+        </v-layout>
+      </v-container>
+
     </div>
   </div>
 </template>
@@ -152,7 +265,7 @@
             text: '05/05 – Fim da Segunda Fase'
           },
           {
-            text: '18/05 - Resultado da Segunda Fase'
+            text: '18/05 – Resultado da Segunda Fase'
           },
           {
             text: '01/06 – Início do Período de Treinamento dos Novos Membros'
