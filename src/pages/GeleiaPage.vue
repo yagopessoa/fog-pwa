@@ -31,7 +31,7 @@
     </v-parallax>
 
     <div class="bottom">
-      <p class="display-1 text-xs-center mt-4">Como funciona?</p>
+      <p class="display-1 text-xs-center mt-4 pt-3">Como funciona?</p>
       <v-layout row wrap>
         <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
           <div class="title-n-subtitle">
