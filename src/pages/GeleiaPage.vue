@@ -1,12 +1,12 @@
 <template>
   <div>
     <v-parallax class="parallax" src="https://i.ibb.co/pQBj77p/bg2.jpg">
-      <div class="upper-session">
+      <div class="upper">
         <v-container grid-list-md text-xs-center>
 
           <v-layout hidden-xs-only row wrap>
             <v-flex xs12 md6>
-              <img src="@/assets/geleia.png" class="brasao" alt="Brasão" />
+              <img src="@/assets/geleia.png" class="brasao" alt="Logo do Geleia" />
             </v-flex>
             <v-flex xs12 md6>
               <div class="title-n-subtitle">
@@ -17,7 +17,7 @@
 
           <v-layout hidden-sm-and-up row wrap>
             <v-flex xs12 sm4>
-              <img src="@/assets/geleia.png" class="brasao-small" alt="Brasão" />
+              <img src="@/assets/geleia.png" class="brasao-small" alt="Logo do Geleia" />
             </v-flex>
             <v-flex xs12 sm8>
               <div class="title-n-subtitle">
@@ -71,7 +71,7 @@
 
 <script>
   export default {
-    name: 'HomePage',
+    name: 'GeleiaPage',
     data () {
       return {
         description: 'O Geleia é a frente do FoG responsável por organizar Game Jams, que são eventos onde você se reúne em um time para desenvolver um jogo em um tempo limitado com um tema específico. Esses eventos geralmente tem a duração de 48 horas que se decorrem ao longo de um final de semana, mas existem jams de até uma semana ou mais!',
@@ -95,7 +95,7 @@
 </script>
 
 <style>
-  .upper-session{
+  .upper{
     min-height: calc(100vh - 60px);
     display: flex;
     align-items: center;
