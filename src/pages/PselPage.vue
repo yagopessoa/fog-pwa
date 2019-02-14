@@ -36,11 +36,11 @@
         <v-layout row wrap>
           <v-flex xs12>
             <p class="subheading text-xs-justify mb-3 pa-2">
-              <b>Primeira Fase:</b> A Primeira Fase do PSel consiste em uma dinâmica a ser dividida em dois dias distintos de acordo com a disponibilidade do candidato. Você poderá participar no dia 16 ou 23 de março.
+              <u><b>Primeira Fase:</b></u> A Primeira Fase do PSel consiste em uma dinâmica a ser dividida em dois dias distintos de acordo com a disponibilidade do candidato. Você poderá participar no dia 16 ou 23 de março.
             </p>
 
             <p class="subheading text-xs-justify pa-2 mb-0">
-              <b>Segunda Fase:</b> Na Segunda Fase do PSel, o candidato terá um mês para desenvolver um projeto em uma área de sua escolha. Poderá criar um projeto de Gestão Geral, Gestão de Recursos Humanos, Programação, Jogo de Cartas ou Jogo de Tabuleiro, Música, Arte, Dublagem e Fotografia / Vídeo (Mídia).
+              <u><b>Segunda Fase:</b></u> Na Segunda Fase do PSel, o candidato terá um mês para desenvolver um projeto em uma área de sua escolha. Poderá criar um projeto de Gestão Geral, Gestão de Recursos Humanos, Programação, Jogo de Cartas ou Jogo de Tabuleiro, Música, Arte, Dublagem e Fotografia / Vídeo (Mídia).
             </p>
             <p class="subheading text-xs-justify pa-2 mb-0">
               Durante este período, serão oferecidos inúmeros cursos que encobrem grande parte das áreas do Fellowship of the Game. Todos os cursos terão duração de 4 horas, das 14 às 18h do dia e recomendamos fortemente que participe daqueles que te interessarem mais. Valorizamos muito a proatividade e a curiosidade em aprender novas áreas.
@@ -116,7 +116,7 @@
                         Introdução ao Desenvolvimento de Jogos em Godot (sala 4-005)
                       </li>
                       <li key="4">
-                        Modelagem 3D para Iniciantes v1 (sala 5-003)
+                        Modelagem 3D para Iniciantes V1 (sala 5-003)
                       </li>
                   </ul>
                   </v-card-text>
@@ -124,7 +124,7 @@
               </v-timeline-item>
 
               <v-timeline-item
-                key="a"
+                key="c"
                 color="accent"
                 large
               >
@@ -150,7 +150,7 @@
               </v-timeline-item>
 
               <v-timeline-item
-                key="a"
+                key="d"
                 color="indigo darken-4"
                 large
               >
@@ -174,10 +174,29 @@
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
+
             </v-timeline>
           </v-flex>
         </v-layout>
       </v-container>
+
+      <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4">
+        Gostou? Não perca tempo!
+      </p>
+      <v-btn 
+        href="https://docs.google.com/forms/d/1TQDZCnpCkRvUbOjXPyHoupEJGD_DJUFS5U5P-FMQpBU/"
+        target="_blank" 
+        color="accent"
+        contained
+        large
+      >
+        <div class="indigo--text text--darken-4">Inscreva-se</div>
+        <v-icon right class="indigo--text text--darken-4">open_in_new</v-icon>
+      </v-btn>
+
+      <p class="subheading text-xs-center mt-4 mb-4 pa-4">
+        Ficou com alguma dúvida? Contate-nos pela página do <b><a href="https://www.facebook.com/fogicmc" target="_blank">Facebook</a></b>!
+      </p>
 
     </div>
   </div>
