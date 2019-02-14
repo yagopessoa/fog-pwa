@@ -1,20 +1,24 @@
 <template>
   <div style="background-color: #ECEFF1;">
-    <img src="@/assets/header-psel.png" class="logo" alt="Banner Choose Your Character" />
+    <img src="@/assets/header-psel.png" class="logo hidden-xs-only hidden-sm-only" alt="Banner Choose Your Character" />
+    <img src="@/assets/large-psel.jpg" class="logo hidden-md-and-up" alt="Banner Choose Your Character" />
     <div class="page">
-      <p class="headline text-xs-center mb-2 pa-4">
+      <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4">
         Áreas de atuação do Fellowship of the Game
       </p>
       <v-container grid-list-md>
         <v-layout row wrap>
-          <v-flex xs12 sm8 offset-sm2>
-            <v-card v-for="area in areas" :key="area.title" class="mb-4">
+          <v-flex xs12>
+            <p class="subheading text-xs-justify mb-4 pa-2">
+              Dentro do FoG, um membro é capaz de exercer diversas funções em qualquer uma das áreas atualmente disponíveis. Não importa a área em que trabalha ou a área que estude, no FoG você poderá transitar entre frentes, participar de projetos, aprender e ensinar. Também ressaltamos que estimulamos muito a proatividade na criação de novas frentes de atuação para o grupo. Somos pessoas abertas a novidades! 
+            </p>
+            <v-card v-for="area in areas" :key="area.title" class="mb-3">
               <v-card-title primary-title>
                 <div class="area-card">
                   <img :src="'/static/img/areas/box-' + area.img + '.png'" alt="Imagem da Área de Atuação" class="area-img" />
                   <div>
                     <h3 class="headline mb-0">{{ area.title }}</h3>
-                    <div class="text-xs-justify">{{ area.description }}</div>
+                    <div class="subheading text-xs-justify">{{ area.description }}</div>
                   </div>
                 </div>
               </v-card-title>
