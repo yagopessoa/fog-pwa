@@ -10,7 +10,12 @@
             </v-flex>
             <v-flex xs12 md6>
               <div class="title-n-subtitle">
-                <p class="headline text-sm-justify ma-2 black--text">{{description}}</p>
+                <p class="headline text-sm-justify ma-2 black--text">
+                  O <b>Geleia</b> é a frente do <b>FoG</b> responsável por organizar <b>Game Jams</b>, que são eventos onde você 
+                  se reúne em um time para <b>desenvolver um jogo</b> em um <b>tempo limitado</b> com um <b>tema específico</b>. 
+                  Esses eventos geralmente tem a duração de 48 horas que se decorrem ao longo de um final 
+                  de semana, mas existem jams de até uma semana ou mais!
+                </p>
               </div>
             </v-flex>
           </v-layout>
@@ -21,7 +26,12 @@
             </v-flex>
             <v-flex xs12 sm8>
               <div class="title-n-subtitle">
-                <p class="subheading text-xs-justify black--text mb-4">{{description}}</p>
+                <p class="subheading text-xs-justify black--text mb-4">
+                  O <b>Geleia</b> é a frente do <b>FoG</b> responsável por organizar <b>Game Jams</b>, que são eventos onde você 
+                  se reúne em um time para <b>desenvolver um jogo</b> em um <b>tempo limitado</b> com um <b>tema específico</b>. 
+                  Esses eventos geralmente tem a duração de 48 horas que se decorrem ao longo de um final 
+                  de semana, mas existem jams de até uma semana ou mais!
+                </p>
               </div>
             </v-flex>
           </v-layout>
@@ -35,9 +45,23 @@
       <v-layout row wrap>
         <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
           <div class="title-n-subtitle">
-            <p class="subheading mb-2 text-xs-justify">{{howItWorks1}}</p>
-            <p class="subheading mb-2 text-xs-justify">{{howItWorks2}}</p>
-            <p class="subheading mb-4 text-xs-justify">{{howItWorks3}}</p>
+            <p class="subheading mb-2 text-xs-justify">
+              Uma <b>game jam</b> é o espaço perfeito para testar novas <b>ideias e conceitos</b>, aprender novas <b>técnicas 
+              e ferramentas</b>, além de conhecer novas <b>pessoas</b>. Algumas jams até oferecem <b>premiações</b> para os 
+              primeiros colocados.
+            </p>
+            <p class="subheading mb-2 text-xs-justify">
+              Seja por interesse em entrar no <b>mundo dos jogos</b>, por mera curiosidade em descobrir como esse 
+              mundo funciona, ou mesmo por querer apenas aprimorar suas habilidades e se divertir, <b>todos 
+              são bem vindos</b> a uma Game Jam.
+            </p>
+            <p class="subheading mb-4 text-xs-justify">
+              Você pode ser um artista, um modelador 3D, um programador, um escritor, um designer, 
+              um compositor ou músico, ou mesmo só um curioso que quer aprender. Nós organizamos e 
+              participamos de jams como a <b>Global Game Jam, Ludum Dare, Café Game Jam, 
+              Game Jam da Semcomp</b> (Semana da computação do ICMC) e diversas outras, organizadas quase 
+              que mensalmente durante todo o ano. Aliás, todas elas são <b>abertas ao público</b> ;)
+            </p>
           </div>
         </v-flex>
       </v-layout>
@@ -46,7 +70,8 @@
         <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
           <div class="title-n-subtitle">
             <p class="subheading mt-3 mb-3 text-xs-justify">
-              Gostou? Para saber mais, visite a <b><a href="https://fellowshipofthegame.github.io/receita-de-geleia/" target="_blank">Receita de Geleia</a></b> para dicas de como realizar sua primeira game jam, com fontes, ferramentas e muito mais!
+              Gostou? Para saber mais, visite a <b><a href="https://fellowshipofthegame.github.io/receita-de-geleia/" target="_blank">Receita de Geleia</a></b> 
+              para <b>dicas</b> de como realizar sua primeira game jam, com <b>fontes</b>, <b>ferramentas</b> e muito mais!
             </p>
           </div>
         </v-flex>
@@ -74,10 +99,6 @@
     name: 'GeleiaPage',
     data () {
       return {
-        description: 'O Geleia é a frente do FoG responsável por organizar Game Jams, que são eventos onde você se reúne em um time para desenvolver um jogo em um tempo limitado com um tema específico. Esses eventos geralmente tem a duração de 48 horas que se decorrem ao longo de um final de semana, mas existem jams de até uma semana ou mais!',
-        howItWorks1: 'Uma game jam é um espaço perfeito para testar novas ideias e conceitos, aprender novas técnicas e ferramentas, além de conhecer novas pessoas. Algumas jams até oferecem premiações para os primeiros colocados.',
-        howItWorks2: 'Seja por interesse em entrar no mundo dos jogos, por mera curiosidade em descobrir como esse mundo funciona, ou mesmo por querer apenas aprimorar suas habilidades e se divertir, todos são bem vindos a uma Game Jam.',
-        howItWorks3: 'Você pode ser um artista, um modelador 3D, um programador, um escritor, um designer, um compositor ou músico, ou mesmo só um curioso que quer aprender. Nós organizamos e participamos de jams como a Global Game Jam, Ludum Dare, Café Game Jam, Game Jam da Semcomp (Semana da computação do ICMC) e diversas outras game jams, organizadas quase que mensalmente durante todo o ano, PARTICIPE! ;)',
         items: [
           {
             src: '/static/img/ggj_1.jpg'
