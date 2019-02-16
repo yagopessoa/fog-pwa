@@ -109,9 +109,15 @@
         </v-flex>
       </v-layout>
 
-      <p class="subheading text-xs-center mt-4 mb-4 pa-4">
+      <p class="subheading text-xs-center mt-4 pa-2">
         Ficou com alguma dúvida? Contate-nos pela página do <b><a href="https://www.facebook.com/fogicmc" target="_blank">Facebook</a></b>!
       </p>
+
+      <v-container fluid text-xs-center>
+        <p class="caption mt-2">
+          Site desenvolvido por <a href="https://www.linkedin.com/in/yagopessoa/">Yago Pessoa</a>. Copyright © 2019 Fellowship of The Game. Ícones por <a href="https://www.flaticon.com">FlatIcon</a>.
+        </p>
+      </v-container>
     </div>
 
   </div>

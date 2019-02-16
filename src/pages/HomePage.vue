@@ -36,6 +36,7 @@
 
     <div class="bottom-session" id="bottom">
       <v-flex xs12 sm8 offset-sm2 md10 offset-md1>
+
         <v-container fluid text-xs-center>
           <p class="display-1 mt-4">O que fazemos?</p>
         </v-container>
@@ -54,6 +55,54 @@
             </v-flex>
           </v-layout>
         </v-container>
+
+        <v-container fluid text-xs-center>
+          <p class="display-1 mt-4">Siga-nos nas redes sociais:</p>
+        </v-container>
+        <v-container grid-list-lg fluid text-xs-center class="pt-0">
+          <v-layout row wrap class="social-row">
+            <v-btn 
+              href="https://www.instagram.com/fog_icmc/"
+              target="_blank" 
+              color="indigo darken-4 white--text"
+              large
+              fab
+            >
+              <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="2x" />
+            </v-btn>
+            <v-btn 
+              href="https://www.facebook.com/fogicmc"
+              target="_blank" 
+              color="indigo darken-4 white--text"
+              large
+              fab
+            >
+              <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook' }" size="2x" />
+            </v-btn>
+            <v-btn 
+              href="https://www.linkedin.com/company/fellowship-of-the-game"
+              target="_blank" 
+              color="indigo darken-4 white--text"
+              large
+              fab
+            >
+              <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin' }" size="2x" />
+            </v-btn>
+            
+          </v-layout>
+        </v-container>
+
+        <v-container fluid text-xs-center>
+          <p class="headline mt-4">Entre em contato pelo Facebook ou por e-mail:</p>
+          <p class="headline"><b>fog@icmc.usp.br</b></p>
+        </v-container>
+
+        <v-container fluid text-xs-center>
+          <p class="caption mt-2">
+            Site desenvolvido por <a href="https://www.linkedin.com/in/yagopessoa/">Yago Pessoa</a>. Copyright © 2019 Fellowship of The Game. Ícones por <a href="https://www.flaticon.com">FlatIcon</a>.
+          </p>
+        </v-container>
+
       </v-flex>
     </div>
 
@@ -112,10 +161,8 @@
     margin-top: 48px;
   }
   .bottom-session{
-    /* min-height: 100vh; */
     width: 100%;
     background-color: rgba(53, 74, 95, 0.2);
-    /* background-color: rgba(53,74,95, 0.2); */
     padding-top: 60px;
   }
   p{
@@ -137,6 +184,11 @@
   .icon{
     padding: 16px;
     margin-top: 24px;
+  }
+  .social-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media screen and (max-width: 1355px) {

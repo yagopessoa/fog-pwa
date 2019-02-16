@@ -35,6 +35,11 @@
             </v-flex>
           </v-layout>
         </v-container>
+        <v-container fluid text-xs-center>
+          <p class="caption mt-2">
+            Site desenvolvido por <a href="https://www.linkedin.com/in/yagopessoa/">Yago Pessoa</a>. Copyright © 2019 Fellowship of The Game. Ícones por <a href="https://www.flaticon.com">FlatIcon</a>.
+          </p>
+        </v-container>
     </v-flex>
   </v-layout>
 </template>
