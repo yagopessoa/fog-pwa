@@ -35,6 +35,12 @@
           >
             <v-list-tile-title v-text="item.title"></v-list-tile-title>
           </v-list-tile>
+          <v-list-tile 
+            key="ptdc"
+            href="https://www.youtube.com/channel/UCfuM4aDjfIggJMaWjb_2lVA"
+          >
+            <v-list-tile-title>Podcast</v-list-tile-title>
+          </v-list-tile>
         </v-list>
       </v-menu>
     </v-toolbar>
@@ -63,6 +69,14 @@
             {{ item.title }}
           </v-list-tile-content>
         </v-list-tile>
+        <v-list-tile 
+          key="ptdc"
+          href="https://www.youtube.com/channel/UCfuM4aDjfIggJMaWjb_2lVA"
+        >
+          <v-list-tile-content>
+            Podcast
+          </v-list-tile-content>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <main>
@@ -85,7 +99,7 @@
         ],
         dropdownItems: [
           { title: 'Jogos', link: '/jogos' },
-          { title: 'Podcast', link: '/podcast' },
+          /* { title: 'Podcast', link: '/podcast' }, */
           { title: 'Geleia', link: '/geleia' },
           { title: 'Disciplina', link: '/disciplina' }
         ]
