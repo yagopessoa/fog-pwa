@@ -7,7 +7,7 @@
             <v-flex xs12 md10 offset-md1>
               <div class="title-n-subtitle text-xs-justify ma-2 black--text">
 
-                <img src="@/assets/gamelink.png" class="logo" alt="Logo da USP Game Link" />
+                <img src="@/assets/gamelink.png" class="gamelink-logo" alt="Logo da USP Game Link" />
 
                 <p class="headline hidden-xs-only mt-4">
                   <u><b>USP Game Link</b></u> é um evento anual organizado pelo <b>FoG</b>, cujo objetivo é unir e fortalecer a <b>comunidade de 
@@ -156,7 +156,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .logo{
+  .gamelink-logo{
     padding-bottom: 16px;
     max-height: 50vh;
   }
@@ -196,7 +196,7 @@
     .parallax{
       min-height: calc(100vh - 48px);
     }
-    .logo{
+    .gamelink-logo{
       max-height: 30vh;
     }
   }
