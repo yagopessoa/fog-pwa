@@ -4,8 +4,10 @@
       <div class="upper">
         <v-container class="upper-container" grid-list-md>
           <v-layout row wrap>
-            <v-flex xs12 md8 offset-md2>
+            <v-flex xs12 md10 offset-md1>
               <div class="title-n-subtitle text-xs-justify ma-2 black--text">
+
+                <img src="@/assets/gamelink.png" class="logo" alt="Logo da USP Game Link" />
 
                 <p class="headline hidden-xs-only mt-4">
                   <u><b>USP Game Link</b></u> é um evento anual organizado pelo <b>FoG</b>, cujo objetivo é unir e fortalecer a <b>comunidade de 
@@ -13,11 +15,8 @@
                   de modo a atingirmos uma relevância ainda maior no cenário mundial de jogos.
                 </p>
 
-                <p class="headline hidden-sm-and-up">
-                  USP Game Link
-                </p>
-                <p class="subheading hidden-sm-and-up">
-                  é um evento anual organizado pelo <b>FoG</b>, cujo objetivo é unir e fortalecer a <b>comunidade de 
+                <p class="subheading hidden-sm-and-up mt-2 pa-0">
+                  USP Game Link é um evento anual organizado pelo <b>FoG</b>, cujo objetivo é unir e fortalecer a <b>comunidade de 
                   desenvolvedores de jogos da região</b>, permitindo um amadurecimento e crescimento da indústria brasileira de jogos, 
                   de modo a atingirmos uma relevância ainda maior no cenário mundial de jogos.
                 </p>
@@ -157,6 +156,10 @@
     flex-direction: column;
     align-items: center;
   }
+  .logo{
+    padding-bottom: 16px;
+    max-height: 50vh;
+  }
   .bottom{
     background-color: rgba(53, 74, 95, 0.2);
     display: flex;
@@ -190,11 +193,11 @@
   }
 
   @media screen and (max-width: 959px) {
-    .title-n-subtitle{
-      padding: 16px;
-    }
     .parallax{
       min-height: calc(100vh - 48px);
+    }
+    .logo{
+      max-height: 30vh;
     }
   }
   @media screen and (max-height: 639px) {
