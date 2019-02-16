@@ -5,7 +5,7 @@
         <v-container class="upper-container" grid-list-md>
           <v-layout row wrap>
             <v-flex xs12 md10 offset-md1>
-              <div class="title-n-subtitle text-xs-justify ma-2 black--text">
+              <div class="subtitle text-xs-justify ma-2 black--text">
 
                 <img src="@/assets/gamelink.png" class="gamelink-logo" alt="Logo da USP Game Link" />
 
@@ -172,7 +172,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .title-n-subtitle{
+  .subtitle{
     display: flex;
     height: 100%;
     flex-direction: column;
