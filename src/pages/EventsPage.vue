@@ -180,13 +180,6 @@
     justify-content: center;
     align-items: center;
   }
-  .brasao{
-    padding: 16px;
-    max-height: 80vh;
-  }
-  .brasao-small{
-    max-width: 75%;
-  }
   .parallax{
     min-height: calc(100vh - 60px);
     object-fit: cover;
@@ -198,11 +191,6 @@
     }
     .gamelink-logo{
       max-height: 30vh;
-    }
-  }
-  @media screen and (max-height: 639px) {
-    .parallax{
-      min-height: calc(100vh);
     }
   }
 </style>

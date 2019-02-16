@@ -134,9 +134,4 @@
       min-height: calc(100vh - 48px);
     }
   }
-  @media screen and (max-height: 639px) {
-    .parallax{
-      min-height: calc(100vh);
-    }
-  }
 </style>
