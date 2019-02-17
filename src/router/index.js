@@ -50,7 +50,7 @@ export default new Router({
       component: PselPage
     },
     {
-      path: '/sobre',
+      path: '/quemsomos',
       name: 'AboutPage',
       component: AboutPage
     }

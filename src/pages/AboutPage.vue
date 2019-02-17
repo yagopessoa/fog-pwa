@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="page">
+  <v-layout class="about-page">
     <v-flex xs12 sm10 offset-sm1>
       <p class="display-1 text-xs-center mt-4 pt-3">Conheça nossos membros:</p>
         <v-container grid-list-lg fluid>
@@ -72,7 +72,7 @@ export default {
 </script>
 
 <style>
-  .page{
+  .about-page{
     background-color: #ECEFF1;
   }
   .img{
