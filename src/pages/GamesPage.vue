@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="page">
+  <v-layout class="games-page">
     <v-flex xs12 sm10 offset-sm1>
         <v-container grid-list-lg fluid>
           <div v-if="loading" class="text-xs-center progress-div">
@@ -76,7 +76,7 @@
 </script>
 
 <style>
-  .page{
+  .games-page{
     background-color: #ECEFF1;
     min-height: 100vh;
   }
