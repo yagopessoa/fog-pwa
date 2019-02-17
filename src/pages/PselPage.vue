@@ -275,7 +275,7 @@
             text: '18/02 – Início das Inscrições para a Primeira Fase'
           },
           {
-            text: '09/03 – Fechamento do Período de Inscrições'
+            text: '14/03 – Fechamento do Período de Inscrições'
           },
           {
             text: '16/03 – Primeira Fase – Primeiro Dia'
