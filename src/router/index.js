@@ -55,5 +55,8 @@ export default new Router({
       component: AboutPage
     }
   ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  },
   mode: 'history'
 })
