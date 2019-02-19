@@ -6,6 +6,8 @@ import App from './App'
 import router from './router'
 import 'vuetify/dist/vuetify.min.css'
 
+import VueAnalytics from 'vue-analytics'
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -29,6 +31,10 @@ Vue.use(Vuetify,
     }
   }
 )
+
+Vue.use(VueAnalytics, {
+  id: 'UA-134518065-1'
+})
 
 /* eslint-disable no-new */
 new Vue({
