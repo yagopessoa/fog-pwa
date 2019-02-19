@@ -88,6 +88,8 @@
 </template>
 
 <script>
+  import { page } from 'vue-analytics'
+
   export default {
     data () {
       return {
@@ -103,6 +105,11 @@
           { title: 'Geleia', link: '/geleia' },
           { title: 'Disciplina', link: '/disciplina' }
         ]
+      }
+    },
+    methods: {
+      track () {
+        page('/')
       }
     },
     name: 'app'
