@@ -214,7 +214,7 @@
 
   @media screen and (max-height: 639px) {
     .parallax{
-      min-height: calc(100vh);
+      min-height: calc(110vh);
     }
   }
 </style>

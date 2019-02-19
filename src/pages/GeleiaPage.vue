@@ -158,7 +158,7 @@
       padding: 16px;
     }
     .parallax{
-      min-height: calc(100vh - 48px);
+      min-height: calc(120vh);
     }
   }
 </style>
