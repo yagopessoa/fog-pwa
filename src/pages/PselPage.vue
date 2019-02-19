@@ -1,11 +1,26 @@
 <template>
   <div style="background-color: #ECEFF1;">
 
-    <img src="@/assets/header-psel.png" class="logo hidden-xs-only hidden-sm-only" alt="Banner Choose Your Character" />
+    <img src="@/assets/header-psel.png" class="logo hidden-xs-only hidden-sm-only mb-2" alt="Banner Choose Your Character" />
     <img src="@/assets/large-psel.jpg" class="logo hidden-md-and-up" alt="Banner Choose Your Character" />
     
     <div class="page">
       <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4">
+        Faça parte do grupo você também!
+      </p>
+      <v-btn 
+        href="https://docs.google.com/forms/d/1TQDZCnpCkRvUbOjXPyHoupEJGD_DJUFS5U5P-FMQpBU/"
+        target="_blank" 
+        color="accent"
+        contained
+        large
+        class="mb-3"
+      >
+        <div class="indigo--text text--darken-4">Inscreva-se</div>
+        <v-icon right class="indigo--text text--darken-4">open_in_new</v-icon>
+      </v-btn>
+
+      <p class="headline text-xs-center mt-4 px-4 pt-4 pb-0 mb-0">
         Áreas de atuação do Fellowship of the Game
       </p>
       <v-container grid-list-md>
