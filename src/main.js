@@ -33,7 +33,8 @@ Vue.use(Vuetify,
 )
 
 Vue.use(VueAnalytics, {
-  id: 'UA-134518065-1'
+  id: 'UA-134518065-1',
+  router
 })
 
 /* eslint-disable no-new */
