@@ -23,7 +23,7 @@ const members = [
       rh: false,
       lead: false,
       design: false,
-      dev: false,
+      dev: true,
       sound: false,
       art: false,
       research: false
@@ -153,7 +153,7 @@ const members = [
     name: 'Eleazar Fernando Braga',
     img: 'eleazar.jpg',
     areas: {
-      coord: true,
+      coord: false,
       rp: true,
       rh: false,
       lead: false,
@@ -213,7 +213,7 @@ const members = [
     name: 'Fabrício Guedes Faria',
     img: 'bibicio.jpg',
     areas: {
-      coord: true,
+      coord: false,
       rp: false,
       rh: false,
       lead: false,
@@ -261,11 +261,11 @@ const members = [
       coord: false,
       rp: false,
       rh: false,
-      lead: false,
+      lead: true,
       design: false,
-      dev: false,
+      dev: true,
       sound: false,
-      art: false,
+      art: true,
       research: false
     }
   },
@@ -333,7 +333,7 @@ const members = [
     name: 'Giuliano Lourençon',
     img: 'psy.jpg',
     areas: {
-      coord: true,
+      coord: false,
       rp: true,
       rh: false,
       lead: true,
@@ -348,14 +348,14 @@ const members = [
     name: 'Guilherme López Barros',
     img: null,
     areas: {
-      coord: true,
+      coord: false,
       rp: true,
       rh: true,
       lead: false,
-      design: false,
+      design: true,
       dev: false,
       sound: false,
-      art: false,
+      art: true,
       research: false
     }
   },
@@ -444,7 +444,7 @@ const members = [
       design: false,
       dev: false,
       sound: false,
-      art: false,
+      art: true,
       research: false
     }
   },
@@ -482,7 +482,7 @@ const members = [
     name: 'Leonardo Tórtoro Pereira',
     img: 'leo.jpg',
     areas: {
-      coord: true,
+      coord: false,
       rp: true,
       rh: false,
       lead: true,
@@ -497,7 +497,7 @@ const members = [
     name: 'Livia Scienza',
     img: null,
     areas: {
-      coord: true,
+      coord: false,
       rp: false,
       rh: true,
       lead: false,
@@ -906,10 +906,10 @@ const members = [
       rp: true,
       rh: false,
       lead: false,
-      design: false,
-      dev: false,
+      design: true,
+      dev: true,
       sound: false,
-      art: false,
+      art: true,
       research: false
     }
   },

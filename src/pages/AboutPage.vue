@@ -51,11 +51,11 @@
                           </v-tooltip>
                           <v-tooltip bottom>
                             <img v-if="item.areas.rh" src="/static/img/areas/box-rh.png" alt="Ícone de Relações Humanas" class="area-icon" slot="activator" />
-                            <span>RH</span>
+                            <span>Relações Humanas</span>
                           </v-tooltip>
                           <v-tooltip bottom>
                             <img v-if="item.areas.rp" src="/static/img/areas/box-rp.png" alt="Ícone de Relações Públicas" class="area-icon" slot="activator" />
-                            <span>RP</span>
+                            <span>Relações Públicas</span>
                           </v-tooltip>
                           <v-tooltip bottom>
                             <img v-if="item.areas.lead" src="/static/img/areas/box-rh.png" alt="Ícone de Gestão" class="area-icon" slot="activator" />

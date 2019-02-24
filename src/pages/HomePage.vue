@@ -7,7 +7,7 @@
             <v-flex xs12 sm8>
               <div class="title-n-subtitle">
                 <p class="display-3 font-weight-medium">{{title}}</p>
-                <p class="headline text-sm-justify">{{description}}</p>
+                <h2 class="headline text-sm-justify black--text">{{description}}</h2>
               </div>
             </v-flex>
             <v-flex xs12 sm4>

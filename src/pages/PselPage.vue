@@ -20,9 +20,9 @@
         <v-icon right class="indigo--text text--darken-4">open_in_new</v-icon>
       </v-btn>
 
-      <p class="headline text-xs-center mt-4 px-4 pt-4 pb-0 mb-0">
+      <h2 class="headline text-xs-center mt-4 px-4 pt-4 pb-0 mb-0">
         Áreas de atuação do Fellowship of the Game
-      </p>
+      </h2>
       <v-container grid-list-md>
         <v-layout row wrap>
           <v-flex xs12>

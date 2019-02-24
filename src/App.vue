@@ -7,7 +7,7 @@
       />
       <v-toolbar-title>
         <router-link to="/" @click="$vuetify.goTo('#home')" tag="span" style="cursor:pointer" >
-          Fellowship of The Game
+          <h1 class="title">Fellowship of The Game</h1>
         </router-link>
       </v-toolbar-title>
       <v-spacer />
@@ -46,7 +46,7 @@
     </v-toolbar>
     <v-toolbar />
 
-    <v-navigation-drawer fixed temporary v-model="sideNav" class="hidden-sm-and-up">
+    <v-navigation-drawer fixed temporary v-model="sideNav" class="hidden-md-and-up">
       <v-list>
         <v-list-tile 
           v-for="item in menuItems" 
