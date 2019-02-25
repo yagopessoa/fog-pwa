@@ -6,6 +6,8 @@ import App from './App'
 import router from './router'
 import 'vuetify/dist/vuetify.min.css'
 
+import VueCountdown from '@chenfengyuan/vue-countdown'
+
 import VueAnalytics from 'vue-analytics'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -31,6 +33,8 @@ Vue.use(Vuetify,
     }
   }
 )
+
+Vue.component(VueCountdown.name, VueCountdown)
 
 Vue.use(VueAnalytics, {
   id: 'UA-134518065-1',
