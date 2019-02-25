@@ -12,6 +12,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
+import { initializeFirebase } from './push-notification'
+initializeFirebase()
+
 library.add(faFacebook)
 library.add(faInstagram)
 library.add(faLinkedin)

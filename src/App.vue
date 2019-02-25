@@ -6,7 +6,7 @@
         class="hidden-md-and-up"
       />
       <v-toolbar-title>
-        <router-link to="/" @click="$vuetify.goTo('#home')" tag="span" style="cursor:pointer" >
+        <router-link to="/" tag="span" style="cursor:pointer" >
           <h1 class="title">Fellowship of The Game</h1>
         </router-link>
       </v-toolbar-title>
@@ -89,6 +89,7 @@
 
 <script>
   import { page } from 'vue-analytics'
+  import { getNotificationPermission } from '@/push-notification'
 
   export default {
     data () {
@@ -111,6 +112,9 @@
       track () {
         page('/')
       }
+    },
+    mounted () {
+      getNotificationPermission()
     },
     name: 'app'
   }
