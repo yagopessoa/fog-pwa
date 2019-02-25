@@ -92,11 +92,59 @@
               <v-icon right class="indigo--text text--darken-4">open_in_new</v-icon>
             </v-btn>
 
+            <p class="headline text-xs-center mt-4 pt-4 mb-0">
+              Faltam:
+            </p>
+            <countdown :time="new Date('November 9, 2019 09:00:00') - Date.now()" class="hidden-xs-only my-2 mb-0 pb-0">
+              <template slot-scope="props">
+                <div class="timer-container">
+                  <div class="time-unit">
+                    <p class="display-3 mb-0 font-weight-bold">{{ props.days }}</p>
+                    <p class="subheading mb-0">dias</p>
+                  </div>
+                  <div class="time-unit">
+                    <p class="display-3 mb-0 font-weight-bold"><span v-if="props.hours<10">0</span>{{ props.hours }}</p>
+                    <p class="subheading mb-0">horas</p>
+                  </div>
+                  <div class="time-unit">
+                    <p class="display-3 mb-0 font-weight-bold"><span v-if="props.minutes<10">0</span>{{ props.minutes }}</p>
+                    <p class="subheading mb-0">mins</p>
+                  </div>
+                  <div class="time-unit">
+                    <p class="display-3 mb-0 font-weight-bold"><span v-if="props.seconds<10">0</span>{{ props.seconds }}</p>
+                    <p class="subheading mb-0">segs</p>
+                  </div>
+                </div>
+              </template>
+            </countdown>
+            <countdown :time="new Date('November 9, 2019 09:00:00') - Date.now()" class="hidden-sm-and-up my-2 mb-0 pb-0">
+              <template slot-scope="props">
+                <div class="timer-container">
+                  <div class="time-unit">
+                    <p class="title mb-0 font-weight-bold">{{ props.days }}</p>
+                    <p class="subheading mb-0">dias</p>
+                  </div>
+                  <div class="time-unit">
+                    <p class="title mb-0 font-weight-bold"><span v-if="props.hours<10">0</span>{{ props.hours }}</p>
+                    <p class="subheading mb-0">horas</p>
+                  </div>
+                  <div class="time-unit">
+                    <p class="title mb-0 font-weight-bold"><span v-if="props.minutes<10">0</span>{{ props.minutes }}</p>
+                    <p class="subheading mb-0">mins</p>
+                  </div>
+                  <div class="time-unit">
+                    <p class="title mb-0 font-weight-bold"><span v-if="props.seconds<10">0</span>{{ props.seconds }}</p>
+                    <p class="subheading mb-0">segs</p>
+                  </div>
+                </div>
+              </template>
+            </countdown>
+
           </v-flex>
         </v-layout>
       </v-container>
 
-      <p class="display-1 text-xs-center mt-2 pt-4">Edição 2018:</p>
+      <p class="headline text-xs-center mt-1">Edição 2018:</p>
       <v-layout row wrap>
         <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
           <v-carousel class="mb-4">
@@ -190,6 +238,16 @@
     min-height: calc(100vh - 60px);
     object-fit: cover;
   }
+  .timer-container{
+    display: flex;
+    justify-content: center;
+  }
+  .time-unit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+  }
 
   @media screen and (max-width: 959px) {
     .parallax{
@@ -197,6 +255,11 @@
     }
     .gamelink-logo{
       max-height: 30vh;
+    }
+  }
+  @media screen and (max-width: 599px) {
+    .time-unit{
+      margin: 8px;
     }
   }
 </style>
