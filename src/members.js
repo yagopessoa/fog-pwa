@@ -8,10 +8,10 @@ const members = [
       rh: false,
       lead: false,
       design: false,
-      dev: false,
-      sound: false,
-      art: false,
-      research: false
+      dev: true,
+      sound: true,
+      art: true,
+      research: true
     }
   },
   {
@@ -134,7 +134,7 @@ const members = [
       research: false
     }
   },
-  {
+  /* {
     name: 'Eike João Sanches Sato',
     img: null,
     areas: {
@@ -148,12 +148,12 @@ const members = [
       art: true,
       research: false
     }
-  },
+  }, */
   {
     name: 'Eleazar Fernando Braga',
     img: 'eleazar.jpg',
     areas: {
-      coord: false,
+      coord: true,
       rp: true,
       rh: false,
       lead: false,
@@ -179,7 +179,7 @@ const members = [
       research: false
     }
   },
-  {
+  /* {
     name: 'Enzo Paulo Sanches Sato',
     img: null,
     areas: {
@@ -193,7 +193,7 @@ const members = [
       art: true,
       research: false
     }
-  },
+  }, */
   {
     name: 'Fabiana Dalacqua Mendes',
     img: 'fabiana.jpg',
@@ -203,7 +203,7 @@ const members = [
       rh: false,
       lead: false,
       design: false,
-      dev: false,
+      dev: true,
       sound: false,
       art: false,
       research: false
@@ -278,7 +278,7 @@ const members = [
       rh: false,
       lead: false,
       design: false,
-      dev: false,
+      dev: true,
       sound: false,
       art: false,
       research: false
@@ -333,7 +333,7 @@ const members = [
     name: 'Giuliano Lourençon',
     img: 'psy.jpg',
     areas: {
-      coord: false,
+      coord: true,
       rp: true,
       rh: false,
       lead: true,
@@ -346,9 +346,9 @@ const members = [
   },
   {
     name: 'Guilherme López Barros',
-    img: null,
+    img: 'gui.jpg',
     areas: {
-      coord: false,
+      coord: true,
       rp: true,
       rh: true,
       lead: false,
@@ -393,7 +393,7 @@ const members = [
     name: 'Gyovana Mayara Moriyama',
     img: 'gyo.jpg',
     areas: {
-      coord: false,
+      coord: true,
       rp: true,
       rh: false,
       lead: false,
@@ -411,9 +411,9 @@ const members = [
       rp: true,
       rh: true,
       lead: false,
-      design: false,
-      dev: false,
-      sound: false,
+      design: true,
+      dev: true,
+      sound: true,
       art: false,
       research: false
     }
@@ -452,7 +452,7 @@ const members = [
     name: 'Leonardo Chieppe',
     img: null,
     areas: {
-      coord: false,
+      coord: true,
       rp: false,
       rh: false,
       lead: false,
@@ -474,7 +474,7 @@ const members = [
       design: false,
       dev: false,
       sound: false,
-      art: false,
+      art: true,
       research: false
     }
   },
@@ -497,7 +497,7 @@ const members = [
     name: 'Livia Scienza',
     img: null,
     areas: {
-      coord: false,
+      coord: true,
       rp: false,
       rh: true,
       lead: false,
@@ -531,7 +531,7 @@ const members = [
       rp: false,
       rh: false,
       lead: false,
-      design: false,
+      design: true,
       dev: false,
       sound: false,
       art: false,
@@ -561,10 +561,10 @@ const members = [
       rp: false,
       rh: false,
       lead: false,
-      design: false,
-      dev: false,
+      design: true,
+      dev: true,
       sound: false,
-      art: false,
+      art: true,
       research: false
     }
   },
@@ -602,15 +602,15 @@ const members = [
     name: 'Matheus Bragança de Souza',
     img: 'mash.jpg',
     areas: {
-      coord: false,
+      coord: true,
       rp: false,
       rh: false,
-      lead: false,
-      design: false,
-      dev: false,
+      lead: true,
+      design: true,
+      dev: true,
       sound: false,
-      art: false,
-      research: false
+      art: true,
+      research: true
     }
   },
   {
@@ -623,7 +623,7 @@ const members = [
       lead: false,
       design: false,
       dev: false,
-      sound: false,
+      sound: true,
       art: false,
       research: false
     }
@@ -637,9 +637,9 @@ const members = [
       rh: false,
       lead: false,
       design: false,
-      dev: false,
+      dev: true,
       sound: false,
-      art: false,
+      art: true,
       research: false
     }
   },
@@ -771,7 +771,7 @@ const members = [
       rp: false,
       rh: false,
       lead: false,
-      design: false,
+      design: true,
       dev: false,
       sound: false,
       art: false,
@@ -816,10 +816,10 @@ const members = [
       rp: false,
       rh: true,
       lead: false,
-      design: false,
-      dev: false,
+      design: true,
+      dev: true,
       sound: false,
-      art: false,
+      art: true,
       research: false
     }
   },
@@ -832,8 +832,8 @@ const members = [
       rh: false,
       lead: false,
       design: false,
-      dev: false,
-      sound: false,
+      dev: true,
+      sound: true,
       art: false,
       research: false
     }
@@ -847,7 +847,7 @@ const members = [
       rh: false,
       lead: false,
       design: false,
-      dev: false,
+      dev: true,
       sound: false,
       art: false,
       research: false
@@ -902,7 +902,7 @@ const members = [
     name: 'Willian Gonzaga Leodegario',
     img: 'binario.jpg',
     areas: {
-      coord: false,
+      coord: true,
       rp: true,
       rh: false,
       lead: false,
