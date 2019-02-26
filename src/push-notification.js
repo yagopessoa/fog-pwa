@@ -23,9 +23,10 @@ export const getNotificationPermission = async () => {
     await messaging.requestPermission()
     const token = await messaging.getToken()
     console.log('user token:', token)
-    firebase.database().ref('messageTokens').push({ token: token })
-      .then(data => {
-        console.log('token saved:', data)
+    /* ToDo: ver antes se esse token ja existe, se nao existir, salva */
+    firebase.database().ref('userTokens').push({ token: token })
+      .then((data) => {
+        console.log('token saved', data)
       }).catch(error => {
         console.log(error)
       })
