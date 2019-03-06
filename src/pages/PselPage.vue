@@ -246,7 +246,7 @@
           },
           {
             title: 'Relações Públicas',
-            description: 'O FoG é mais do que só fazer jogo! A área de Relações Públicas é responsável pela parte de extensão do grupo. Ela é dividida em diversas frentes muito legais que ganharam até uma página exclusiva, confira aqui! As área de RP também programa diversos minicursos de muitas áreas, confira aqui.',
+            description: 'O FoG é mais do que só fazer jogo! As áreas de Relações Públicas são responsáveis pela parte de extensão do grupo, todo o contato com a comunidade é feito através de sua equipe. São eles quem cuidam da imprensa, site, eventos e também da organização dos minicursos oferecidos pelo grupo.',
             img: 'rp'
           },
           {

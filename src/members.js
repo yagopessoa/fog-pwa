@@ -94,11 +94,11 @@ const members = [
     img: null,
     areas: {
       coord: false,
-      rp: false,
+      rp: true,
       rh: false,
       lead: false,
-      design: false,
-      dev: false,
+      design: true,
+      dev: true,
       sound: false,
       art: false,
       research: false
@@ -323,7 +323,7 @@ const members = [
       rh: false,
       lead: false,
       design: false,
-      dev: false,
+      dev: true,
       sound: false,
       art: false,
       research: false
@@ -414,6 +414,21 @@ const members = [
       design: true,
       dev: true,
       sound: true,
+      art: false,
+      research: false
+    }
+  },
+  {
+    name: 'Ítalo Tobler Silva',
+    img: null,
+    areas: {
+      coord: false,
+      rp: false,
+      rh: false,
+      lead: false,
+      design: false,
+      dev: true,
+      sound: false,
       art: false,
       research: false
     }
@@ -588,7 +603,7 @@ const members = [
     img: 'temoteo.jpg',
     areas: {
       coord: false,
-      rp: false,
+      rp: true,
       rh: false,
       lead: false,
       design: false,
@@ -666,8 +681,8 @@ const members = [
       rp: true,
       rh: false,
       lead: false,
-      design: false,
-      dev: false,
+      design: true,
+      dev: true,
       sound: false,
       art: false,
       research: false
@@ -756,10 +771,10 @@ const members = [
       rp: false,
       rh: false,
       lead: false,
-      design: false,
+      design: true,
       dev: false,
       sound: false,
-      art: false,
+      art: true,
       research: false
     }
   },
@@ -920,7 +935,7 @@ const members = [
       coord: false,
       rp: true,
       rh: false,
-      lead: false,
+      lead: true,
       design: false,
       dev: false,
       sound: false,
