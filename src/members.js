@@ -134,21 +134,6 @@ const members = [
       research: false
     }
   },
-  /* {
-    name: 'Eike João Sanches Sato',
-    img: null,
-    areas: {
-      coord: false,
-      rp: false,
-      rh: false,
-      lead: false,
-      design: false,
-      dev: false,
-      sound: false,
-      art: true,
-      research: false
-    }
-  }, */
   {
     name: 'Eleazar Fernando Braga',
     img: 'eleazar.jpg',
@@ -179,21 +164,6 @@ const members = [
       research: false
     }
   },
-  /* {
-    name: 'Enzo Paulo Sanches Sato',
-    img: null,
-    areas: {
-      coord: false,
-      rp: false,
-      rh: false,
-      lead: false,
-      design: false,
-      dev: false,
-      sound: false,
-      art: true,
-      research: false
-    }
-  }, */
   {
     name: 'Fabiana Dalacqua Mendes',
     img: 'fabiana.jpg',
@@ -683,21 +653,6 @@ const members = [
       lead: false,
       design: true,
       dev: true,
-      sound: false,
-      art: false,
-      research: false
-    }
-  },
-  {
-    name: 'Priscila Ribeiro Zucato',
-    img: 'pri.jpg',
-    areas: {
-      coord: false,
-      rp: false,
-      rh: false,
-      lead: false,
-      design: false,
-      dev: false,
       sound: false,
       art: false,
       research: false
