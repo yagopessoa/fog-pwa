@@ -480,7 +480,7 @@ const members = [
   },
   {
     name: 'Livia Scienza',
-    img: null,
+    img: 'livia.jpg',
     areas: {
       coord: true,
       rp: false,
