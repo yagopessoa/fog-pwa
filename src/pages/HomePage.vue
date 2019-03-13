@@ -56,7 +56,7 @@
           </v-layout>
         </v-container>
 
-        <v-container fluid text-xs-center>
+        <v-container fluid text-xs-center id="contato">
           <p class="display-1 mt-4">Siga-nos nas redes sociais:</p>
         </v-container>
         <v-container grid-list-lg fluid text-xs-center class="pt-0">

@@ -5,7 +5,7 @@
     <img src="@/assets/large-psel.jpg" class="logo hidden-md-and-up" alt="Banner Choose Your Character" />
     
     <div class="page">
-      <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4">
+      <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4" v-if="!hasClosed">
         Faça parte do grupo você também!
       </p>
       <v-btn 
@@ -15,17 +15,63 @@
         contained
         large
         class="mb-3"
+        v-if="!hasClosed"
       >
         <div class="indigo--text text--darken-4">Inscreva-se</div>
         <v-icon right class="indigo--text text--darken-4">open_in_new</v-icon>
       </v-btn>
+
+      <v-container grid-list-md v-else>
+        <v-layout row wrap>
+          <v-flex xs12 md10 offset-md1>
+            <h2 class="headline text-xs-center mt-4 px-4 pt-4 pb-0 mb-1">
+              Infelizmente as inscrições para o processo seletivo desse ano já se encerraram!
+            </h2>
+            <p class="headline text-xs-center mb-4 pa-2">
+              Mas siga-nos nas redes sociais para saber quando será o próximo e ficar por dentro de tudo que acontece no FoG:
+            </p>
+            <v-container grid-list-lg fluid text-xs-center class="pt-0 pb-0 mb-0">
+              <v-layout row wrap class="social-row-psel">
+                <v-btn 
+                  href="https://www.instagram.com/fog_icmc/"
+                  target="_blank" 
+                  color="indigo darken-4 white--text"
+                  large
+                  fab
+                >
+                  <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="2x" />
+                </v-btn>
+                <v-btn 
+                  href="https://www.facebook.com/fogicmc"
+                  target="_blank" 
+                  color="indigo darken-4 white--text"
+                  large
+                  fab
+                >
+                  <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook' }" size="2x" />
+                </v-btn>
+                <v-btn 
+                  href="https://www.linkedin.com/company/fellowship-of-the-game"
+                  target="_blank" 
+                  color="indigo darken-4 white--text"
+                  large
+                  fab
+                >
+                  <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin' }" size="2x" />
+                </v-btn>
+                
+              </v-layout>
+            </v-container>
+          </v-flex>
+        </v-layout>
+      </v-container>
 
       <h2 class="headline text-xs-center mt-4 px-4 pt-4 pb-0 mb-0">
         Áreas de atuação do Fellowship of the Game
       </h2>
       <v-container grid-list-md>
         <v-layout row wrap>
-          <v-flex xs12>
+          <v-flex xs12 md10 offset-md1>
             <p class="subheading text-xs-justify mb-4 pa-2">
               Dentro do FoG, um membro é capaz de exercer diversas funções em qualquer uma das áreas atualmente disponíveis. Não importa a área em que trabalha ou a área que estude, no FoG você poderá transitar entre frentes, participar de projetos, aprender e ensinar. Também ressaltamos que estimulamos muito a proatividade na criação de novas frentes de atuação para o grupo. Somos pessoas abertas a novidades! 
             </p>
@@ -49,7 +95,7 @@
       </p>
       <v-container grid-list-md>
         <v-layout row wrap>
-          <v-flex xs12>
+          <v-flex xs12 md10 offset-md1>
             <p class="subheading text-xs-justify mb-3 pa-2">
               <u><b>Primeira Fase:</b></u> A Primeira Fase do PSel consiste em uma dinâmica a ser dividida em dois dias distintos de acordo com a disponibilidade do candidato. Você poderá participar no dia 16 ou 23 de março.
             </p>
@@ -68,12 +114,17 @@
         </v-layout>
       </v-container>
 
-      <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4">
+      <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4" id="datas">
         Datas do Processo Seletivo
       </p>
       <ul>
         <div class="pa-3">
-          <li class="subheading text-xs-justify pb-2 mb-0" v-for="date in dates" :key="date.text">
+          <li class="subheading text-xs-justify pb-2 mb-0 grey--text" v-for="date in dates" :key="date.text" v-if="new Date() > date.date">
+            <p class="grey--text">
+              {{ date.text }}
+            </p>
+          </li>
+          <li class="subheading font-weight-medium text-xs-justify pb-2 mb-0" v-for="date in dates" :key="date.text" v-if="new Date() < date.date">
             <p>
               {{ date.text }}
             </p>
@@ -195,7 +246,7 @@
         </v-layout>
       </v-container>
 
-      <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4">
+      <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4" v-if="!hasClosed">
         Gostou? Não perca tempo!
       </p>
       <v-btn 
@@ -204,6 +255,7 @@
         color="accent"
         contained
         large
+        v-if="!hasClosed"
       >
         <div class="indigo--text text--darken-4">Inscreva-se</div>
         <v-icon right class="indigo--text text--darken-4">open_in_new</v-icon>
@@ -287,33 +339,47 @@
         ],
         dates: [
           {
-            text: '18/02 – Início das Inscrições para a Primeira Fase'
+            text: '18/02 – Início das Inscrições para a Primeira Fase',
+            date: new Date(2019, 1, 19)
           },
           {
-            text: '14/03 – Fechamento do Período de Inscrições'
+            text: '14/03 – Fechamento do Período de Inscrições',
+            date: new Date(2019, 2, 15)
           },
           {
-            text: '16/03 – Primeira Fase – Primeiro Dia'
+            text: '16/03 – Primeira Fase – Primeiro Dia',
+            date: new Date(2019, 2, 17)
           },
           {
-            text: '23/03 – Primeira Fase – Segundo Dia'
+            text: '23/03 – Primeira Fase – Segundo Dia',
+            date: new Date(2019, 2, 24)
           },
           {
-            text: '06/04 – Resultados da Primeira Fase e Início da Segunda Fase'
+            text: '06/04 – Resultados da Primeira Fase e Início da Segunda Fase',
+            date: new Date(2019, 3, 7)
           },
           {
-            text: '05/05 – Fim da Segunda Fase'
+            text: '05/05 – Fim da Segunda Fase',
+            date: new Date(2019, 4, 6)
           },
           {
-            text: '18/05 – Resultado da Segunda Fase'
+            text: '18/05 – Resultado da Segunda Fase',
+            date: new Date(2019, 4, 19)
           },
           {
-            text: '01/06 – Início do Período de Treinamento dos Novos Membros'
+            text: '01/06 – Início do Período de Treinamento dos Novos Membros',
+            date: new Date(2019, 5, 2)
           },
           {
-            text: '08/09 – Fim do Período de Treinamento dos Novos Membros'
+            text: '08/09 – Fim do Período de Treinamento dos Novos Membros',
+            date: new Date(2019, 8, 9)
           }
         ]
+      }
+    },
+    computed: {
+      hasClosed () {
+        return new Date() > new Date(2019, 2, 15)
       }
     }
   }
@@ -335,6 +401,11 @@
 }
 .area-card{
   display: flex;
+  align-items: center;
+}
+.social-row-psel{
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 </style>
