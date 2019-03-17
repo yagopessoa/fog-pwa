@@ -185,13 +185,13 @@ const members = [
     areas: {
       coord: false,
       rp: false,
-      rh: false,
-      lead: false,
+      rh: true,
+      lead: true,
       design: true,
       dev: true,
       sound: true,
       art: true,
-      research: false
+      research: true
     }
   },
   {
@@ -368,7 +368,7 @@ const members = [
       rh: false,
       lead: false,
       design: false,
-      dev: false,
+      dev: true,
       sound: false,
       art: true
     }
@@ -455,7 +455,7 @@ const members = [
       coord: false,
       rp: false,
       rh: false,
-      lead: false,
+      lead: true,
       design: false,
       dev: false,
       sound: false,
@@ -759,8 +759,8 @@ const members = [
       design: false,
       dev: false,
       sound: false,
-      art: false,
-      research: false
+      art: true,
+      research: true
     }
   },
   {

@@ -136,18 +136,19 @@
         Datas dos Minicursos
       </p>
       
-       <v-container grid-list-md>
+       <v-container grid-list-md id="minicursos">
         <v-layout row wrap>
           <v-flex xs12>
-            <v-timeline>
+
+            <v-timeline class="hidden-xs-only">
               <v-timeline-item
                 key="a"
                 color="accent"
                 large
               >
-                <v-card class="elevation-2">
-                  <v-card-title class="headline">06/04 (sábado)</v-card-title>
-                  <v-card-text>
+                <v-card color="accent" dark class="elevation-2">
+                  <v-card-title class="title">06/04 (sábado)</v-card-title>
+                  <v-card-text class="white text--primary">
                     <ul>
                       <li key="1">
                         Arte Vetorial para Iniciantes (sala 5-003)
@@ -158,7 +159,7 @@
                       <li key="3">
                         Desenvolvendo um Jogo Shoot'em Up em Unity (sala 4-005)
                       </li>
-                  </ul>
+                    </ul>
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
@@ -168,9 +169,9 @@
                 color="indigo darken-4"
                 large
               >
-                <v-card class="elevation-2">
-                  <v-card-title class="headline">07/04 (domingo)</v-card-title>
-                  <v-card-text>
+                <v-card color="indigo darken-4" dark class="elevation-2">
+                  <v-card-title class="title">07/04 (domingo)</v-card-title>
+                  <v-card-text class="white text--primary">
                     <ul>
                       <li key="1">
                         Arte 2D para Iniciantes (sala 5-001)
@@ -184,7 +185,7 @@
                       <li key="4">
                         Modelagem 3D para Iniciantes V1 (sala 5-003)
                       </li>
-                  </ul>
+                    </ul>
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
@@ -194,9 +195,9 @@
                 color="accent"
                 large
               >
-                <v-card class="elevation-2">
-                  <v-card-title class="headline">13/04 (sábado)</v-card-title>
-                  <v-card-text>
+                <v-card color="accent" dark class="elevation-2">
+                  <v-card-title class="title">13/04 (sábado)</v-card-title>
+                  <v-card-text class="white text--primary">
                     <ul>
                       <li key="1">
                         Composição de Trilhas Sonoras para Jogos v2 (sala 4-003)
@@ -210,7 +211,7 @@
                       <li key="4">
                         Pipeline de Produção para Jogos Digitais (sala 5-101)
                       </li>
-                  </ul>
+                    </ul>
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
@@ -220,9 +221,9 @@
                 color="indigo darken-4"
                 large
               >
-                <v-card class="elevation-2">
-                  <v-card-title class="headline">14/04 (domingo)</v-card-title>
-                  <v-card-text>
+                <v-card color="indigo darken-4" dark class="elevation-2">
+                  <v-card-title class="title">14/04 (domingo)</v-card-title>
+                  <v-card-text class="white text--primary">
                     <ul>
                       <li key="1">
                         Design e Desenvolvimento de Jogos Analógicos (sala 4-003)
@@ -242,6 +243,118 @@
               </v-timeline-item>
 
             </v-timeline>
+
+            <v-timeline
+              align-top
+              dense
+              class="hidden-sm-and-up"
+            >
+              <v-timeline-item
+                color="accent"
+                small
+              >
+                <v-layout pt-3>
+                  <v-flex xs3>
+                    <strong>06/04 (sábado)</strong>
+                  </v-flex>
+                  <v-flex>
+                      <ul>
+                        <li key="1">
+                          Arte Vetorial para Iniciantes (sala 5-003)
+                        </li>
+                        <li key="2">
+                          Composição de Trilhas Sonoras para Jogos v1 (sala 4-003)
+                        </li>
+                        <li key="3">
+                          Desenvolvendo um Jogo Shoot'em Up em Unity (sala 4-005)
+                        </li>
+                      </ul>
+                  </v-flex>
+                </v-layout>
+              </v-timeline-item>
+
+              <v-timeline-item
+                color="indigo darken-4"
+                small
+              >
+                <v-layout pt-3>
+                  <v-flex xs3>
+                    <strong>07/04 (domingo)</strong>
+                  </v-flex>
+                  <v-flex>
+                    <ul>
+                      <li key="1">
+                        Arte 2D para Iniciantes (sala 5-001)
+                      </li>
+                      <li key="2">
+                        Introdução à Voxel Art (sala 4-003)
+                      </li>
+                      <li key="3">
+                        Introdução ao Desenvolvimento de Jogos em Godot (sala 4-005)
+                      </li>
+                      <li key="4">
+                        Modelagem 3D para Iniciantes V1 (sala 5-003)
+                      </li>
+                    </ul>
+                  </v-flex>
+                </v-layout>
+              </v-timeline-item>
+
+              <v-timeline-item
+                color="accent"
+                small
+              >
+                <v-layout pt-3>
+                  <v-flex xs3>
+                    <strong>13/04 (sábado)</strong>
+                  </v-flex>
+                  <v-flex>
+                    <ul>
+                      <li key="1">
+                        Composição de Trilhas Sonoras para Jogos v2 (sala 4-003)
+                      </li>
+                      <li key="2">
+                        Desenvolvendo um Jogo de Plataforma em Unity (sala 4-005)
+                      </li>
+                      <li key="3">
+                        Introdução à Pixel Art (sala 5-001)
+                      </li>
+                      <li key="4">
+                        Pipeline de Produção para Jogos Digitais (sala 5-101)
+                      </li>
+                    </ul>
+                  </v-flex>
+                </v-layout>
+              </v-timeline-item>
+
+              <v-timeline-item
+                color="indigo darken-4"
+                small
+              >
+                <v-layout pt-3>
+                  <v-flex xs3>
+                    <strong>14/04 (domingo)</strong>
+                  </v-flex>
+                  <v-flex>
+                    <ul>
+                      <li key="1">
+                        Design e Desenvolvimento de Jogos Analógicos (sala 4-003)
+                      </li>
+                      <li key="2">
+                        Gestão de Projeto e Pessoa para Jogos Digitais (sala 5-001)
+                      </li>
+                      <li key="3">
+                        Modelagem 3D para Iniciantes V2 (sala 5-003)
+                      </li>
+                      <li key="4">
+                        Unity Intermediário - Propriedades, Scriptable Objects e Eventos! (sala 4-005)
+                      </li>
+                    </ul>
+                  </v-flex>
+                </v-layout>
+              </v-timeline-item>
+            </v-timeline>
+            
           </v-flex>
         </v-layout>
       </v-container>
