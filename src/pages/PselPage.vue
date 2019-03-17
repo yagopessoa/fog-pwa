@@ -1,5 +1,37 @@
 <template>
   <div style="background-color: #ECEFF1;">
+    <v-bottom-sheet v-model="sheet">
+      <v-card tile>
+        <p class="title ma-0 pa-4 ">{{ sheetInfo.title }}</p>
+        <p class="subheading ma-0 px-4 pb-2">
+          <v-icon left class="black--text">today</v-icon>
+          {{ sheetInfo.date }}
+        </p>
+        <p class="subheading ma-0 px-4 pb-2">
+          <v-icon left class="black--text">place</v-icon>
+          {{ sheetInfo.local }}
+        </p>
+        <p class="subheading ma-0 px-4 pb-4">
+          <v-icon left class="black--text">person</v-icon>
+          Ministrante: {{ sheetInfo.minister }}
+        </p>
+        <!-- <p class="text-xs-justify ma-0 px-4 pb-4">{{ sheetInfo.description }}</p> -->
+        <div class="ma-0 px-4 pb-4">
+          <v-btn 
+            :href="sheetInfo.link"
+            target="_blank" 
+            color="secondary"
+            outline
+            class="mx-0"
+            disabled
+          >
+            Inscreva-se
+            <v-icon small right>open_in_new</v-icon>
+          </v-btn>
+        </div>
+        <p class="capition text-xs-justify ma-0 px-4 pb-4">*As inscrições abrirão em breve!</p>
+      </v-card>
+    </v-bottom-sheet>
 
     <img src="@/assets/header-psel.png" class="logo hidden-xs-only hidden-sm-only mb-2" alt="Banner Choose Your Character" />
     <img src="@/assets/large-psel.jpg" class="logo hidden-md-and-up" alt="Banner Choose Your Character" />
@@ -135,6 +167,9 @@
       <p class="headline text-xs-center mt-4 pa-2 px-4 pt-4">
         Datas dos Minicursos
       </p>
+      <p class="text-xs-center px-2 py-0">
+        Obs. Clique nos minicursos para obter mais informações!
+      </p>
       
        <v-container grid-list-md id="minicursos">
         <v-layout row wrap>
@@ -150,14 +185,20 @@
                   <v-card-title class="title">06/04 (sábado)</v-card-title>
                   <v-card-text class="white text--primary">
                     <ul>
-                      <li key="1">
-                        Arte Vetorial para Iniciantes (sala 5-003)
+                      <li key="1" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Arte Vetorial para Iniciantes', '06/04 - 14h00', 'ICMC - Sala 5-003', 'Matheus Bragança', '', '#')">
+                          Arte Vetorial para Iniciantes</a></u></template>
                       </li>
-                      <li key="2">
-                        Composição de Trilhas Sonoras para Jogos v1 (sala 4-003)
+                      <li key="2" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v1', '06/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', '', '#')">
+                          Composição de Trilhas Sonoras para Jogos v1</a></u></template>
                       </li>
-                      <li key="3">
-                        Desenvolvendo um Jogo Shoot'em Up em Unity (sala 4-005)
+                      <li key="3" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Desenvolvendo um Jogo Shoot\'em Up em Unity', '06/04 - 14h00', 'ICMC - Sala 4-005', 'William Ferreira', '', '#')">
+                          Desenvolvendo um Jogo Shoot'em Up em Unity</a></u></template>
                       </li>
                     </ul>
                   </v-card-text>
@@ -173,17 +214,25 @@
                   <v-card-title class="title">07/04 (domingo)</v-card-title>
                   <v-card-text class="white text--primary">
                     <ul>
-                      <li key="1">
-                        Arte 2D para Iniciantes (sala 5-001)
+                      <li key="1" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Arte 2D para Iniciantes', '07/04 - 14h00', 'ICMC - Sala 5-001', 'Renata Vinhaga', '', '#')">
+                          Arte 2D para Iniciantes</a></u></template>
                       </li>
-                      <li key="2">
-                        Introdução à Voxel Art (sala 4-003)
+                      <li key="2" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Introdução à Voxel Art', '07/04 - 14h00', 'ICMC - Sala 4-003', 'Leonardo Chieppe', '', '#')">
+                          Introdução à Voxel Art</a></u></template>
                       </li>
-                      <li key="3">
-                        Introdução ao Desenvolvimento de Jogos em Godot (sala 4-005)
+                      <li key="3" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Introdução ao Desenvolvimento de Jogos em Godot', '07/04 - 14h00', 'ICMC - Sala 4-005', 'Guilherme López', '', '#')">
+                          Introdução ao Desenvolvimento de Jogos em Godot</a></u></template>
                       </li>
-                      <li key="4">
-                        Modelagem 3D para Iniciantes V1 (sala 5-003)
+                      <li key="4" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Modelagem 3D para Iniciantes v1', '07/04 - 14h00', 'ICMC - Sala 5-003', 'Eleazar Fernando', '', '#')">
+                          Modelagem 3D para Iniciantes v1</a></u></template>
                       </li>
                     </ul>
                   </v-card-text>
@@ -199,17 +248,25 @@
                   <v-card-title class="title">13/04 (sábado)</v-card-title>
                   <v-card-text class="white text--primary">
                     <ul>
-                      <li key="1">
-                        Composição de Trilhas Sonoras para Jogos v2 (sala 4-003)
+                      <li key="1" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v2', '13/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', '', '#')">
+                          Composição de Trilhas Sonoras para Jogos v2</a></u></template>
                       </li>
-                      <li key="2">
-                        Desenvolvendo um Jogo de Plataforma em Unity (sala 4-005)
+                      <li key="2" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Desenvolvendo um Jogo de Plataforma em Unity', '13/04 - 14h00', 'ICMC - Sala 4-005', 'Henrique Camilo', '', '#')">
+                          Desenvolvendo um Jogo de Plataforma em Unity</a></u></template>
                       </li>
-                      <li key="3">
-                        Introdução à Pixel Art (sala 5-001)
+                      <li key="3" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Introdução à Pixel Art', '13/04 - 14h00', 'ICMC - Sala 5-001', 'Guilherme López', '', '#')">
+                          Introdução à Pixel Art</a></u></template>
                       </li>
-                      <li key="4">
-                        Pipeline de Produção para Jogos Digitais (sala 5-101)
+                      <li key="4" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Pipeline de Produção para Jogos Digitais', '13/04 - 14h00', 'ICMC - Sala 5-101', 'Leonardo Chieppe', '', '#')">
+                          Pipeline de Produção para Jogos Digitais</a></u></template>
                       </li>
                     </ul>
                   </v-card-text>
@@ -225,17 +282,25 @@
                   <v-card-title class="title">14/04 (domingo)</v-card-title>
                   <v-card-text class="white text--primary">
                     <ul>
-                      <li key="1">
-                        Design e Desenvolvimento de Jogos Analógicos (sala 4-003)
+                      <li key="1" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Design e Desenvolvimento de Jogos Analógicos', '14/04 - 14h00', 'ICMC - Sala 4-003', 'Michael Alves - Arcano', '', '#')">
+                          Design e Desenvolvimento de Jogos Analógicos</a></u></template>
                       </li>
-                      <li key="2">
-                        Gestão de Projeto e Pessoa para Jogos Digitais (sala 5-001)
+                      <li key="2" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Gestão de Projeto e Pessoa para Jogos Digitais', '14/04 - 14h00', 'ICMC - Sala 5-001', 'Matheus Bragança', '', '#')">
+                          Gestão de Projeto e Pessoa para Jogos Digitais</a></u></template>
                       </li>
-                      <li key="3">
-                        Modelagem 3D para Iniciantes V2 (sala 5-003)
+                      <li key="3" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Modelagem 3D para Iniciantes v2', '14/04 - 14h00', 'ICMC - Sala 5-003', 'Giuliano Lourenço', '', '#')">
+                          Modelagem 3D para Iniciantes v2</a></u></template>
                       </li>
-                      <li key="4">
-                        Unity Intermediário - Propriedades, Scriptable Objects e Eventos! (sala 4-005)
+                      <li key="4" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Unity Intermediário - Propriedades, Scriptable Objects e Eventos!', '14/04 - 14h00', 'ICMC - Sala 4-005', 'Abner Santos', '', '#')">
+                          Unity Intermediário - Propriedades, Scriptable Objects e Eventos!</a></u></template>
                       </li>
                   </ul>
                   </v-card-text>
@@ -258,17 +323,23 @@
                     <strong>06/04 (sábado)</strong>
                   </v-flex>
                   <v-flex>
-                      <ul>
-                        <li key="1">
-                          Arte Vetorial para Iniciantes (sala 5-003)
-                        </li>
-                        <li key="2">
-                          Composição de Trilhas Sonoras para Jogos v1 (sala 4-003)
-                        </li>
-                        <li key="3">
-                          Desenvolvendo um Jogo Shoot'em Up em Unity (sala 4-005)
-                        </li>
-                      </ul>
+                    <ul>
+                      <li key="1" class="mb-3">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Arte Vetorial para Iniciantes', '06/04 - 14h00', 'ICMC - Sala 5-003', 'Matheus Bragança', '', '#')">
+                          Arte Vetorial para Iniciantes</a></u></template>
+                      </li>
+                      <li key="2" class="mb-3">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v1', '06/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', '', '#')">
+                          Composição de Trilhas Sonoras para Jogos v1</a></u></template>
+                      </li>
+                      <li key="3" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Desenvolvendo um Jogo Shoot\'em Up em Unity', '06/04 - 14h00', 'ICMC - Sala 4-005', 'William Ferreira', '', '#')">
+                          Desenvolvendo um Jogo Shoot'em Up em Unity</a></u></template>
+                      </li>
+                    </ul>
                   </v-flex>
                 </v-layout>
               </v-timeline-item>
@@ -283,17 +354,25 @@
                   </v-flex>
                   <v-flex>
                     <ul>
-                      <li key="1">
-                        Arte 2D para Iniciantes (sala 5-001)
+                      <li key="1" class="mb-3">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Arte 2D para Iniciantes', '07/04 - 14h00', 'ICMC - Sala 5-001', 'Renata Vinhaga', '', '#')">
+                          Arte 2D para Iniciantes</a></u></template>
                       </li>
-                      <li key="2">
-                        Introdução à Voxel Art (sala 4-003)
+                      <li key="2" class="mb-3">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Introdução à Voxel Art', '07/04 - 14h00', 'ICMC - Sala 4-003', 'Leonardo Chieppe', '', '#')">
+                          Introdução à Voxel Art</a></u></template>
                       </li>
-                      <li key="3">
-                        Introdução ao Desenvolvimento de Jogos em Godot (sala 4-005)
+                      <li key="3" class="mb-3">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Introdução ao Desenvolvimento de Jogos em Godot', '07/04 - 14h00', 'ICMC - Sala 4-005', 'Guilherme López', '', '#')">
+                          Introdução ao Desenvolvimento de Jogos em Godot</a></u></template>
                       </li>
-                      <li key="4">
-                        Modelagem 3D para Iniciantes V1 (sala 5-003)
+                      <li key="4" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Modelagem 3D para Iniciantes v1', '07/04 - 14h00', 'ICMC - Sala 5-003', 'Eleazar ', '', '#')">
+                          Modelagem 3D para Iniciantes v1</a></u></template>
                       </li>
                     </ul>
                   </v-flex>
@@ -310,17 +389,25 @@
                   </v-flex>
                   <v-flex>
                     <ul>
-                      <li key="1">
-                        Composição de Trilhas Sonoras para Jogos v2 (sala 4-003)
+                      <li key="1" class="mb-3">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v2', '13/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', '', '#')">
+                          Composição de Trilhas Sonoras para Jogos v2</a></u></template>
                       </li>
-                      <li key="2">
-                        Desenvolvendo um Jogo de Plataforma em Unity (sala 4-005)
+                      <li key="2" class="mb-3">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Desenvolvendo um Jogo de Plataforma em Unity', '13/04 - 14h00', 'ICMC - Sala 4-005', 'Henrique Camilo', '', '#')">
+                          Desenvolvendo um Jogo de Plataforma em Unity</a></u></template>
                       </li>
-                      <li key="3">
-                        Introdução à Pixel Art (sala 5-001)
+                      <li key="3" class="mb-3">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Introdução à Pixel Art', '13/04 - 14h00', 'ICMC - Sala 5-001', 'Guilherme López', '', '#')">
+                          Introdução à Pixel Art</a></u></template>
                       </li>
-                      <li key="4">
-                        Pipeline de Produção para Jogos Digitais (sala 5-101)
+                      <li key="4" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Pipeline de Produção para Jogos Digitais', '13/04 - 14h00', 'ICMC - Sala 5-101', 'Leonardo Chieppe', '', '#')">
+                          Pipeline de Produção para Jogos Digitais</a></u></template>
                       </li>
                     </ul>
                   </v-flex>
@@ -337,17 +424,25 @@
                   </v-flex>
                   <v-flex>
                     <ul>
-                      <li key="1">
-                        Design e Desenvolvimento de Jogos Analógicos (sala 4-003)
+                      <li key="1" class="mb-3">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Design e Desenvolvimento de Jogos Analógicos', '14/04 - 14h00', 'ICMC - Sala 4-003', 'Michael Alves - Arcano', '', '#')">
+                          Design e Desenvolvimento de Jogos Analógicos</a></u></template>
                       </li>
-                      <li key="2">
-                        Gestão de Projeto e Pessoa para Jogos Digitais (sala 5-001)
+                      <li key="2" class="mb-3">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Gestão de Projeto e Pessoa para Jogos Digitais', '14/04 - 14h00', 'ICMC - Sala 5-001', 'Matheus Bragança', '', '#')">
+                          Gestão de Projeto e Pessoa para Jogos Digitais</a></u></template>
                       </li>
-                      <li key="3">
-                        Modelagem 3D para Iniciantes V2 (sala 5-003)
+                      <li key="3" class="mb-3">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Modelagem 3D para Iniciantes v2', '14/04 - 14h00', 'ICMC - Sala 5-003', 'Giuliano Lourenço', '', '#')">
+                          Modelagem 3D para Iniciantes v2</a></u></template>
                       </li>
-                      <li key="4">
-                        Unity Intermediário - Propriedades, Scriptable Objects e Eventos! (sala 4-005)
+                      <li key="4" class="mb-1">
+                        <template v-slot:activator><u><a 
+                          @click="openSheet('Unity Intermediário - Propriedades, Scriptable Objects e Eventos!', '14/04 - 14h00', 'ICMC - Sala 4-005', 'Abner Santos', '', '#')">
+                          Unity Intermediário - Propriedades, Scriptable Objects e Eventos!</a></u></template>
                       </li>
                     </ul>
                   </v-flex>
@@ -393,6 +488,15 @@
     name: 'GeleiaPage',
     data () {
       return {
+        sheet: false,
+        sheetInfo: {
+          title: '',
+          date: '',
+          local: '',
+          minister: '',
+          description: '',
+          link: ''
+        },
         areas: [
           {
             title: 'Coordenação',
@@ -493,6 +597,17 @@
     computed: {
       hasClosed () {
         return new Date() > new Date(2019, 2, 15)
+      }
+    },
+    methods: {
+      openSheet (title, date, local, minister, description, link) {
+        this.sheetInfo.title = title
+        this.sheetInfo.date = date
+        this.sheetInfo.local = local
+        this.sheetInfo.minister = minister
+        this.sheetInfo.description = description
+        this.sheetInfo.link = link
+        this.sheet = true
       }
     }
   }
