@@ -294,7 +294,7 @@
                       </li>
                       <li key="3" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Modelagem 3D para Iniciantes v2', '14/04 - 14h00', 'ICMC - Sala 5-003', 'Giuliano Lourenço', '', '#')">
+                          @click="openSheet('Modelagem 3D para Iniciantes v2', '14/04 - 14h00', 'ICMC - Sala 5-003', 'Giuliano Lourençon', '', '#')">
                           Modelagem 3D para Iniciantes v2</a></u></template>
                       </li>
                       <li key="4" class="mb-1">
@@ -436,7 +436,7 @@
                       </li>
                       <li key="3" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Modelagem 3D para Iniciantes v2', '14/04 - 14h00', 'ICMC - Sala 5-003', 'Giuliano Lourenço', '', '#')">
+                          @click="openSheet('Modelagem 3D para Iniciantes v2', '14/04 - 14h00', 'ICMC - Sala 5-003', 'Giuliano Lourençon', '', '#')">
                           Modelagem 3D para Iniciantes v2</a></u></template>
                       </li>
                       <li key="4" class="mb-1">

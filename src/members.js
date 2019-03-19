@@ -240,6 +240,21 @@ const members = [
     }
   },
   {
+    name: 'Gabriel de Moura Peres',
+    img: null,
+    areas: {
+      coord: false,
+      rp: true,
+      rh: false,
+      lead: false,
+      design: false,
+      dev: true,
+      sound: false,
+      art: false,
+      research: false
+    }
+  },
+  {
     name: 'Gabriel Mattheus Bezerra Alves de Carvalho',
     img: 'gabriel.jpg',
     areas: {
@@ -531,8 +546,8 @@ const members = [
       rp: false,
       rh: true,
       lead: false,
-      design: false,
-      dev: false,
+      design: true,
+      dev: true,
       sound: false,
       art: false,
       research: false
