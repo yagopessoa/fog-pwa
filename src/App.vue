@@ -24,7 +24,7 @@
       <v-menu offset-y class="hidden-xs-only hidden-sm-only mx-4">
         <v-btn outline color="white" class="black--text" slot="activator">
           <v-icon>expand_more</v-icon>
-          <div class="mr-2">Projetos</div>
+          <div class="mr-2">Difusão</div>
         </v-btn>
 
         <v-list>
@@ -96,12 +96,12 @@
       return {
         sideNav: false,
         menuItems: [
-          { title: 'Quem somos', link: '/quemsomos' },
+          { title: 'Membros', link: '/quemsomos' },
+          { title: 'Jogos', link: '/jogos' },
           { title: 'Eventos', link: '/eventos' },
           { title: 'Faça parte', link: '/psel' }
         ],
         dropdownItems: [
-          { title: 'Jogos', link: '/jogos' },
           /* { title: 'Podcast', link: '/podcast' }, */
           { title: 'Geleia', link: '/geleia' },
           { title: 'Disciplina', link: '/disciplina' }

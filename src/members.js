@@ -753,11 +753,11 @@ const members = [
     img: 'pequi.jpg',
     areas: {
       coord: false,
-      rp: false,
+      rp: true,
       rh: false,
       lead: false,
       design: true,
-      dev: false,
+      dev: true,
       sound: false,
       art: false,
       research: false
@@ -847,7 +847,7 @@ const members = [
       rh: true,
       lead: false,
       design: false,
-      dev: false,
+      dev: true,
       sound: false,
       art: false,
       research: false

@@ -15,7 +15,7 @@
           <v-icon left class="black--text">person</v-icon>
           Ministrante: {{ sheetInfo.minister }}
         </p>
-        <!-- <p class="text-xs-justify ma-0 px-4 pb-4">{{ sheetInfo.description }}</p> -->
+        <p v-if="sheetInfo.description!==''" class="text-xs-justify ma-0 px-4 pb-4">{{ sheetInfo.description }}</p>
         <div class="ma-0 px-4 pb-4">
           <v-btn 
             :href="sheetInfo.link"
@@ -23,13 +23,13 @@
             color="secondary"
             outline
             class="mx-0"
-            disabled
+            :disabled="sheetInfo.link==='#'"
           >
             Inscreva-se
             <v-icon small right>open_in_new</v-icon>
           </v-btn>
         </div>
-        <p class="capition text-xs-justify ma-0 px-4 pb-4">*As inscrições abrirão em breve!</p>
+        <p v-if="sheetInfo.link==='#'" class="capition text-xs-justify ma-0 px-4 pb-4">*As inscrições abrirão em breve!</p>
       </v-card>
     </v-bottom-sheet>
 
@@ -187,17 +187,17 @@
                     <ul>
                       <li key="1" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Arte Vetorial para Iniciantes', '06/04 - 14h00', 'ICMC - Sala 5-003', 'Matheus Bragança', '', '#')">
+                          @click="openSheet('Arte Vetorial para Iniciantes', '06/04 - 14h00', 'ICMC - Sala 5-003', 'Matheus Bragança', 'Os participantes irão adquirir habilidades básicas em utilização do inkscape para a criação de assets e logos e conhecimento de conceitos de design gráfico.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400395&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Arte Vetorial para Iniciantes</a></u></template>
                       </li>
                       <li key="2" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v1', '06/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', '', '#')">
+                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v1', '06/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', 'Expor técnicas de desenvolvimento musical especialmente aplicados a situações composicionais comuns em trilhas de jogos. Ao fim do curso os participantes terão noções básicas de teoria musical e composição e do manuseio de dois softwares livres de escrita de partitura e produção de áudio.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400396&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Composição de Trilhas Sonoras para Jogos v1</a></u></template>
                       </li>
                       <li key="3" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Desenvolvendo um Jogo Shoot\'em Up em Unity', '06/04 - 14h00', 'ICMC - Sala 4-005', 'William Ferreira', '', '#')">
+                          @click="openSheet('Desenvolvendo um Jogo Shoot\'em Up em Unity', '06/04 - 14h00', 'ICMC - Sala 4-005', 'William Ferreira', 'Ao final do curso, os participantes poderão criar um jogo Shoot \'em up simples em Unity por meio das técnicas e conceitos apresentados.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400397&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Desenvolvendo um Jogo Shoot'em Up em Unity</a></u></template>
                       </li>
                     </ul>
@@ -216,22 +216,22 @@
                     <ul>
                       <li key="1" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Arte 2D para Iniciantes', '07/04 - 14h00', 'ICMC - Sala 5-001', 'Renata Vinhaga', '', '#')">
+                          @click="openSheet('Arte 2D para Iniciantes', '07/04 - 14h00', 'ICMC - Sala 5-001', 'Renata Vinhaga', 'Introduzir ao aluno os conceitos básicos de arte para criação de personagens e ambientação que serão utilizados no desenvolvimento de um jogo.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400404&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Arte 2D para Iniciantes</a></u></template>
                       </li>
                       <li key="2" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Introdução à Voxel Art', '07/04 - 14h00', 'ICMC - Sala 4-003', 'Leonardo Chieppe', '', '#')">
+                          @click="openSheet('Introdução à Voxel Art', '07/04 - 14h00', 'ICMC - Sala 4-003', 'Leonardo Chieppe', 'Ensinar a importância de um estilo artístico uniforme dentro dos jogos digitais, introduzir o aluno no estilo de voxel art e realizar uma prática de prototipacao de modelos usando o MagicaVoxel.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400398&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Introdução à Voxel Art</a></u></template>
                       </li>
                       <li key="3" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Introdução ao Desenvolvimento de Jogos em Godot', '07/04 - 14h00', 'ICMC - Sala 4-005', 'Guilherme López', '', '#')">
+                          @click="openSheet('Introdução ao Desenvolvimento de Jogos em Godot', '07/04 - 14h00', 'ICMC - Sala 4-005', 'Guilherme López', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos eletrônicos, com foco na programação e lógica de um jogo utilizando-se dos recursos oferecidos pela ferramenta Godot.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400401&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Introdução ao Desenvolvimento de Jogos em Godot</a></u></template>
                       </li>
                       <li key="4" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Modelagem 3D para Iniciantes v1', '07/04 - 14h00', 'ICMC - Sala 5-003', 'Eleazar Fernando', '', '#')">
+                          @click="openSheet('Modelagem 3D para Iniciantes v1', '07/04 - 14h00', 'ICMC - Sala 5-003', 'Eleazar Fernando', '	Introduzir o aluno aos conceitos, técnicas e ferramentas do desenvolvimento de modelagem 3D para jogos, com foco em uma aplicação prática das ferramentas utilizadas.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400365&codedicurceu=19002&numseqofeedi=1&oriins=W')">
                           Modelagem 3D para Iniciantes v1</a></u></template>
                       </li>
                     </ul>
@@ -326,17 +326,17 @@
                     <ul>
                       <li key="1" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Arte Vetorial para Iniciantes', '06/04 - 14h00', 'ICMC - Sala 5-003', 'Matheus Bragança', '', '#')">
+                          @click="openSheet('Arte Vetorial para Iniciantes', '06/04 - 14h00', 'ICMC - Sala 5-003', 'Matheus Bragança', 'Os participantes irão adquirir habilidades básicas em utilização do inkscape para a criação de assets e logos e conhecimento de conceitos de design gráfico.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400395&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Arte Vetorial para Iniciantes</a></u></template>
                       </li>
                       <li key="2" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v1', '06/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', '', '#')">
+                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v1', '06/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', 'Expor técnicas de desenvolvimento musical especialmente aplicados a situações composicionais comuns em trilhas de jogos. Ao fim do curso os participantes terão noções básicas de teoria musical e composição e do manuseio de dois softwares livres de escrita de partitura e produção de áudio.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400396&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Composição de Trilhas Sonoras para Jogos v1</a></u></template>
                       </li>
                       <li key="3" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Desenvolvendo um Jogo Shoot\'em Up em Unity', '06/04 - 14h00', 'ICMC - Sala 4-005', 'William Ferreira', '', '#')">
+                          @click="openSheet('Desenvolvendo um Jogo Shoot\'em Up em Unity', '06/04 - 14h00', 'ICMC - Sala 4-005', 'William Ferreira', 'Ao final do curso, os participantes poderão criar um jogo Shoot \'em up simples em Unity por meio das técnicas e conceitos apresentados.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400397&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Desenvolvendo um Jogo Shoot'em Up em Unity</a></u></template>
                       </li>
                     </ul>
@@ -356,22 +356,22 @@
                     <ul>
                       <li key="1" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Arte 2D para Iniciantes', '07/04 - 14h00', 'ICMC - Sala 5-001', 'Renata Vinhaga', '', '#')">
+                          @click="openSheet('Arte 2D para Iniciantes', '07/04 - 14h00', 'ICMC - Sala 5-001', 'Renata Vinhaga', 'Introduzir ao aluno os conceitos básicos de arte para criação de personagens e ambientação que serão utilizados no desenvolvimento de um jogo.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400404&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Arte 2D para Iniciantes</a></u></template>
                       </li>
                       <li key="2" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Introdução à Voxel Art', '07/04 - 14h00', 'ICMC - Sala 4-003', 'Leonardo Chieppe', '', '#')">
+                          @click="openSheet('Introdução à Voxel Art', '07/04 - 14h00', 'ICMC - Sala 4-003', 'Leonardo Chieppe', 'Ensinar a importância de um estilo artístico uniforme dentro dos jogos digitais, introduzir o aluno no estilo de voxel art e realizar uma prática de prototipacao de modelos usando o MagicaVoxel.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400398&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Introdução à Voxel Art</a></u></template>
                       </li>
                       <li key="3" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Introdução ao Desenvolvimento de Jogos em Godot', '07/04 - 14h00', 'ICMC - Sala 4-005', 'Guilherme López', '', '#')">
+                          @click="openSheet('Introdução ao Desenvolvimento de Jogos em Godot', '07/04 - 14h00', 'ICMC - Sala 4-005', 'Guilherme López', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos eletrônicos, com foco na programação e lógica de um jogo utilizando-se dos recursos oferecidos pela ferramenta Godot.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400401&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Introdução ao Desenvolvimento de Jogos em Godot</a></u></template>
                       </li>
                       <li key="4" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Modelagem 3D para Iniciantes v1', '07/04 - 14h00', 'ICMC - Sala 5-003', 'Eleazar ', '', '#')">
+                          @click="openSheet('Modelagem 3D para Iniciantes v1', '07/04 - 14h00', 'ICMC - Sala 5-003', 'Eleazar ', '	Introduzir o aluno aos conceitos, técnicas e ferramentas do desenvolvimento de modelagem 3D para jogos, com foco em uma aplicação prática das ferramentas utilizadas.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400365&codedicurceu=19002&numseqofeedi=1&oriins=W')">
                           Modelagem 3D para Iniciantes v1</a></u></template>
                       </li>
                     </ul>
