@@ -76,6 +76,9 @@
 </script>
 
 <style>
+  html{
+    overflow-y: auto;
+  }
   .games-page{
     background-color: #ECEFF1;
     min-height: 100vh;

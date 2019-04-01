@@ -122,6 +122,9 @@ export default {
 </script>
 
 <style>
+  html{
+    overflow-y: auto;
+  }
   .about-page{
     background-color: #ECEFF1;
   }

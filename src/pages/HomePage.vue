@@ -139,6 +139,9 @@
 </script>
 
 <style>
+  html{
+    overflow-y: auto;
+  }
   .brasao{
     padding: 16px;
   }

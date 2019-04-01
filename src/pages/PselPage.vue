@@ -15,6 +15,7 @@
           <v-icon left class="black--text">person</v-icon>
           Ministrante: {{ sheetInfo.minister }}
         </p>
+        <!-- icone pro pre-requisitos: playlist_add_check -->
         <p v-if="sheetInfo.description!==''" class="text-xs-justify ma-0 px-4 pb-4">{{ sheetInfo.description }}</p>
         <div class="ma-0 px-4 pb-4">
           <v-btn 
@@ -226,7 +227,7 @@
                       </li>
                       <li key="3" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Introdução ao Desenvolvimento de Jogos em Godot', '07/04 - 14h00', 'ICMC - Sala 4-005', 'Guilherme López', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos eletrônicos, com foco na programação e lógica de um jogo utilizando-se dos recursos oferecidos pela ferramenta Godot.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400401&codedicurceu=19001&numseqofeedi=1&oriins=W')">
+                          @click="openSheet('Introdução ao Desenvolvimento de Jogos em Godot', '07/04 - 14h00', 'ICMC - Sala 4-005', 'Willian Gonzaga Leodegario', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos eletrônicos, com foco na programação e lógica de um jogo utilizando-se dos recursos oferecidos pela ferramenta Godot.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400401&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Introdução ao Desenvolvimento de Jogos em Godot</a></u></template>
                       </li>
                       <li key="4" class="mb-1">
@@ -366,7 +367,7 @@
                       </li>
                       <li key="3" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Introdução ao Desenvolvimento de Jogos em Godot', '07/04 - 14h00', 'ICMC - Sala 4-005', 'Guilherme López', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos eletrônicos, com foco na programação e lógica de um jogo utilizando-se dos recursos oferecidos pela ferramenta Godot.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400401&codedicurceu=19001&numseqofeedi=1&oriins=W')">
+                          @click="openSheet('Introdução ao Desenvolvimento de Jogos em Godot', '07/04 - 14h00', 'ICMC - Sala 4-005', 'Willian Gonzaga Leodegario', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos eletrônicos, com foco na programação e lógica de um jogo utilizando-se dos recursos oferecidos pela ferramenta Godot.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400401&codedicurceu=19001&numseqofeedi=1&oriins=W')">
                           Introdução ao Desenvolvimento de Jogos em Godot</a></u></template>
                       </li>
                       <li key="4" class="mb-1">
@@ -614,6 +615,9 @@
 </script>
 
 <style>
+html{
+  overflow-y: auto;
+}
 .logo{
   width: 100%;
 }

@@ -122,6 +122,9 @@
 </script>
 
 <style>
+  html{
+    overflow-y: auto;
+  }
   .upper{
     min-height: calc(100vh - 60px);
     display: flex;

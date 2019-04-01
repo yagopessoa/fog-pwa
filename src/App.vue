@@ -37,7 +37,7 @@
           </v-list-tile>
           <v-list-tile 
             key="ptdc"
-            href="https://www.youtube.com/channel/UCfuM4aDjfIggJMaWjb_2lVA"
+            href="https://www.fog.icmc.usp.br/podcast"
           >
             <v-list-tile-title>Podcast</v-list-tile-title>
           </v-list-tile>
@@ -71,7 +71,7 @@
         </v-list-tile>
         <v-list-tile 
           key="ptdc"
-          href="https://www.youtube.com/channel/UCfuM4aDjfIggJMaWjb_2lVA"
+          href="https://www.fog.icmc.usp.br/podcast"
         >
           <v-list-tile-content>
             Podcast

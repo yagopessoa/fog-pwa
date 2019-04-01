@@ -9,6 +9,7 @@ import AboutPage from '@/pages/AboutPage'
 import ClassPage from '@/pages/ClassPage'
 import EventsPage from '@/pages/EventsPage'
 import GeleiaPage from '@/pages/GeleiaPage'
+import PuPage from '@/pages/PuPage'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ export default new Router({
       path: '/quemsomos',
       name: 'AboutPage',
       component: AboutPage
+    },
+    {
+      path: '/pu',
+      name: 'PuPage',
+      component: PuPage
     }
   ],
   scrollBehavior (to, from, savedPosition) {
