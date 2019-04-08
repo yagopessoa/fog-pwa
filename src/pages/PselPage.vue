@@ -193,8 +193,8 @@
                       </li>
                       <li key="2" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v1', '06/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', 'Expor técnicas de desenvolvimento musical especialmente aplicados a situações composicionais comuns em trilhas de jogos. Ao fim do curso os participantes terão noções básicas de teoria musical e composição e do manuseio de dois softwares livres de escrita de partitura e produção de áudio.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400396&codedicurceu=19001&numseqofeedi=1&oriins=W')">
-                          Composição de Trilhas Sonoras para Jogos v1</a></u></template>
+                          @click="openSheet('Composição de Trilhas Sonoras para Jogos', '06/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', 'Expor técnicas de desenvolvimento musical especialmente aplicados a situações composicionais comuns em trilhas de jogos. Ao fim do curso os participantes terão noções básicas de teoria musical e composição e do manuseio de dois softwares livres de escrita de partitura e produção de áudio.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400396&codedicurceu=19001&numseqofeedi=1&oriins=W')">
+                          Composição de Trilhas Sonoras para Jogos</a></u></template>
                       </li>
                       <li key="3" class="mb-1">
                         <template v-slot:activator><u><a 
@@ -232,8 +232,8 @@
                       </li>
                       <li key="4" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Modelagem 3D para Iniciantes v1', '07/04 - 14h00', 'ICMC - Sala 5-003', 'Eleazar Fernando', '	Introduzir o aluno aos conceitos, técnicas e ferramentas do desenvolvimento de modelagem 3D para jogos, com foco em uma aplicação prática das ferramentas utilizadas.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400365&codedicurceu=19002&numseqofeedi=1&oriins=W')">
-                          Modelagem 3D para Iniciantes v1</a></u></template>
+                          @click="openSheet('Modelagem 3D para Iniciantes', '07/04 - 14h00', 'ICMC - Sala 5-003', 'Eleazar Fernando', '	Introduzir o aluno aos conceitos, técnicas e ferramentas do desenvolvimento de modelagem 3D para jogos, com foco em uma aplicação prática das ferramentas utilizadas.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400365&codedicurceu=19002&numseqofeedi=1&oriins=W')">
+                          Modelagem 3D para Iniciantes</a></u></template>
                       </li>
                     </ul>
                   </v-card-text>
@@ -251,22 +251,22 @@
                     <ul>
                       <li key="1" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v2', '13/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', '', '#')">
-                          Composição de Trilhas Sonoras para Jogos v2</a></u></template>
+                          @click="openSheet('Composição de Trilhas Sonoras para jogos', '13/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', 'Expor técnicas de desenvolvimento musical especialmente aplicados a situações composicionais comuns em trilhas de jogos. Ao fim do curso os participantes terão noções básicas de teoria musical e composição e do manuseio de dois softwares livres de escrita de partitura e produção de áudio.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400396&cod_edicao=19002&numseqofeedi=1')">
+                          Composição de Trilhas Sonoras para jogos</a></u></template>
                       </li>
                       <li key="2" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Desenvolvendo um Jogo de Plataforma em Unity', '13/04 - 14h00', 'ICMC - Sala 4-005', 'Henrique Camilo', '', '#')">
+                          @click="openSheet('Desenvolvendo um Jogo de Plataforma em Unity', '13/04 - 14h00', 'ICMC - Sala 4-005', 'Henrique Camilo', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos eletrônicos, com foco na programação do jogo com o auxílio da engine Unity.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400403&cod_edicao=19001&numseqofeedi=1')">
                           Desenvolvendo um Jogo de Plataforma em Unity</a></u></template>
                       </li>
                       <li key="3" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Introdução à Pixel Art', '13/04 - 14h00', 'ICMC - Sala 5-001', 'Guilherme López', '', '#')">
+                          @click="openSheet('Introdução à Pixel Art', '13/04 - 14h00', 'ICMC - Sala 5-001', 'Guilherme López', 'Ao final do curso os alunos terão conhecimento de técnicas de animação voltadas a Pixel Art para utilizar na criação de sprites.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400405&cod_edicao=19001&numseqofeedi=1')">
                           Introdução à Pixel Art</a></u></template>
                       </li>
                       <li key="4" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Pipeline de Produção para Jogos Digitais', '13/04 - 14h00', 'ICMC - Sala 5-101', 'Leonardo Chieppe', '', '#')">
+                          @click="openSheet('Pipeline de Produção para Jogos Digitais', '13/04 - 14h00', 'ICMC - Sala 5-101', 'Leonardo Chieppe', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos jogos eletrônicos, com foco em boas práticas de documentação de projetos.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400402&cod_edicao=19001&numseqofeedi=1')">
                           Pipeline de Produção para Jogos Digitais</a></u></template>
                       </li>
                     </ul>
@@ -285,22 +285,22 @@
                     <ul>
                       <li key="1" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Design e Desenvolvimento de Jogos Analógicos', '14/04 - 14h00', 'ICMC - Sala 4-003', 'Michael Alves - Arcano', '', '#')">
+                          @click="openSheet('Design e Desenvolvimento de Jogos Analógicos', '14/04 - 14h00', 'ICMC - Sala 4-003', 'Michael Alves - Arcano', 'Introduzir aos participantes os desafios do design e do desenvolvimento de jogos sob uma perspectiva do Game Designer, e elucidar os processos por de trás da criação de um jogo, o trabalho do Game Designer e os métodos utilizados para se criar um jogo.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400400&cod_edicao=19001&numseqofeedi=1')">
                           Design e Desenvolvimento de Jogos Analógicos</a></u></template>
                       </li>
                       <li key="2" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Gestão de Projeto e Pessoa para Jogos Digitais', '14/04 - 14h00', 'ICMC - Sala 5-001', 'Matheus Bragança', '', '#')">
+                          @click="openSheet('Gestão de Projeto e Pessoa para Jogos Digitais', '14/04 - 14h00', 'ICMC - Sala 5-001', 'Matheus Bragança', 'Os participantes irão adquirir habilidade de perceber problemas que uma equipe de desenvolvimento de jogos irão enfrentar e aprender como mitigar e também irão aprender as funções de um produtor de jogos e um pouco de cada área da gestão de projetos em jogos digitais.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400399&cod_edicao=19001&numseqofeedi=1')">
                           Gestão de Projeto e Pessoa para Jogos Digitais</a></u></template>
                       </li>
                       <li key="3" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Modelagem 3D para Iniciantes v2', '14/04 - 14h00', 'ICMC - Sala 5-003', 'Giuliano Lourençon', '', '#')">
-                          Modelagem 3D para Iniciantes v2</a></u></template>
+                          @click="openSheet('Modelagem 3D para Iniciantesjogos', '14/04 - 14h00', 'ICMC - Sala 5-003', 'Giuliano Lourençon', 'Introduzir o aluno aos conceitos, técnicas e ferramentas do desenvolvimento de modelagem 3D para jogos, com foco em uma aplicação prática das ferramentas utilizadas.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400365&cod_edicao=19003&numseqofeedi=1')">
+                          Modelagem 3D para Iniciantesjogos</a></u></template>
                       </li>
                       <li key="4" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Unity Intermediário - Propriedades, Scriptable Objects e Eventos!', '14/04 - 14h00', 'ICMC - Sala 4-005', 'Abner Santos', '', '#')">
+                          @click="openSheet('Unity Intermediário - Propriedades, Scriptable Objects e Eventos!', '14/04 - 14h00', 'ICMC - Sala 4-005', 'Abner Santos', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos eletrônicos, com foco em conceitos intermediários/avançados no uso da ferramenta Unity3D para que o mesmo adquira boas práticas e melhor resolução de problemas comumente encontrados no desenvolvimento de jogos.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400410&cod_edicao=19001&numseqofeedi=1')">
                           Unity Intermediário - Propriedades, Scriptable Objects e Eventos!</a></u></template>
                       </li>
                   </ul>
@@ -332,8 +332,8 @@
                       </li>
                       <li key="2" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v1', '06/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', 'Expor técnicas de desenvolvimento musical especialmente aplicados a situações composicionais comuns em trilhas de jogos. Ao fim do curso os participantes terão noções básicas de teoria musical e composição e do manuseio de dois softwares livres de escrita de partitura e produção de áudio.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400396&codedicurceu=19001&numseqofeedi=1&oriins=W')">
-                          Composição de Trilhas Sonoras para Jogos v1</a></u></template>
+                          @click="openSheet('Composição de Trilhas Sonoras para Jogos', '06/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', 'Expor técnicas de desenvolvimento musical especialmente aplicados a situações composicionais comuns em trilhas de jogos. Ao fim do curso os participantes terão noções básicas de teoria musical e composição e do manuseio de dois softwares livres de escrita de partitura e produção de áudio.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400396&codedicurceu=19001&numseqofeedi=1&oriins=W')">
+                          Composição de Trilhas Sonoras para Jogos</a></u></template>
                       </li>
                       <li key="3" class="mb-1">
                         <template v-slot:activator><u><a 
@@ -372,8 +372,8 @@
                       </li>
                       <li key="4" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Modelagem 3D para Iniciantes v1', '07/04 - 14h00', 'ICMC - Sala 5-003', 'Eleazar ', '	Introduzir o aluno aos conceitos, técnicas e ferramentas do desenvolvimento de modelagem 3D para jogos, com foco em uma aplicação prática das ferramentas utilizadas.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400365&codedicurceu=19002&numseqofeedi=1&oriins=W')">
-                          Modelagem 3D para Iniciantes v1</a></u></template>
+                          @click="openSheet('Modelagem 3D para Iniciantes', '07/04 - 14h00', 'ICMC - Sala 5-003', 'Eleazar ', '	Introduzir o aluno aos conceitos, técnicas e ferramentas do desenvolvimento de modelagem 3D para jogos, com foco em uma aplicação prática das ferramentas utilizadas.', 'https://uspdigital.usp.br/apolo/inscricaoPublicaFormTurmaListar?codund=55&codcurceu=550400365&codedicurceu=19002&numseqofeedi=1&oriins=W')">
+                          Modelagem 3D para Iniciantes</a></u></template>
                       </li>
                     </ul>
                   </v-flex>
@@ -392,22 +392,22 @@
                     <ul>
                       <li key="1" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Composição de Trilhas Sonoras para Jogos v2', '13/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', '', '#')">
-                          Composição de Trilhas Sonoras para Jogos v2</a></u></template>
+                          @click="openSheet('Composição de Trilhas Sonoras para jogos', '13/04 - 14h00', 'ICMC - Sala 4-003', 'Bruno Gazoni', 'Expor técnicas de desenvolvimento musical especialmente aplicados a situações composicionais comuns em trilhas de jogos. Ao fim do curso os participantes terão noções básicas de teoria musical e composição e do manuseio de dois softwares livres de escrita de partitura e produção de áudio.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400396&cod_edicao=19002&numseqofeedi=1')">
+                          Composição de Trilhas Sonoras para jogos</a></u></template>
                       </li>
                       <li key="2" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Desenvolvendo um Jogo de Plataforma em Unity', '13/04 - 14h00', 'ICMC - Sala 4-005', 'Henrique Camilo', '', '#')">
+                          @click="openSheet('Desenvolvendo um Jogo de Plataforma em Unity', '13/04 - 14h00', 'ICMC - Sala 4-005', 'Henrique Camilo', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos eletrônicos, com foco na programação do jogo com o auxílio da engine Unity.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400403&cod_edicao=19001&numseqofeedi=1')">
                           Desenvolvendo um Jogo de Plataforma em Unity</a></u></template>
                       </li>
                       <li key="3" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Introdução à Pixel Art', '13/04 - 14h00', 'ICMC - Sala 5-001', 'Guilherme López', '', '#')">
+                          @click="openSheet('Introdução à Pixel Art', '13/04 - 14h00', 'ICMC - Sala 5-001', 'Guilherme López', 'Ao final do curso os alunos terão conhecimento de técnicas de animação voltadas a Pixel Art para utilizar na criação de sprites.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400405&cod_edicao=19001&numseqofeedi=1')">
                           Introdução à Pixel Art</a></u></template>
                       </li>
                       <li key="4" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Pipeline de Produção para Jogos Digitais', '13/04 - 14h00', 'ICMC - Sala 5-101', 'Leonardo Chieppe', '', '#')">
+                          @click="openSheet('Pipeline de Produção para Jogos Digitais', '13/04 - 14h00', 'ICMC - Sala 5-101', 'Leonardo Chieppe', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos jogos eletrônicos, com foco em boas práticas de documentação de projetos.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400402&cod_edicao=19001&numseqofeedi=1')">
                           Pipeline de Produção para Jogos Digitais</a></u></template>
                       </li>
                     </ul>
@@ -427,22 +427,22 @@
                     <ul>
                       <li key="1" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Design e Desenvolvimento de Jogos Analógicos', '14/04 - 14h00', 'ICMC - Sala 4-003', 'Michael Alves - Arcano', '', '#')">
+                          @click="openSheet('Design e Desenvolvimento de Jogos Analógicos', '14/04 - 14h00', 'ICMC - Sala 4-003', 'Michael Alves - Arcano', 'Introduzir aos participantes os desafios do design e do desenvolvimento de jogos sob uma perspectiva do Game Designer, e elucidar os processos por de trás da criação de um jogo, o trabalho do Game Designer e os métodos utilizados para se criar um jogo.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400400&cod_edicao=19001&numseqofeedi=1')">
                           Design e Desenvolvimento de Jogos Analógicos</a></u></template>
                       </li>
                       <li key="2" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Gestão de Projeto e Pessoa para Jogos Digitais', '14/04 - 14h00', 'ICMC - Sala 5-001', 'Matheus Bragança', '', '#')">
+                          @click="openSheet('Gestão de Projeto e Pessoa para Jogos Digitais', '14/04 - 14h00', 'ICMC - Sala 5-001', 'Matheus Bragança', 'Os participantes irão adquirir habilidade de perceber problemas que uma equipe de desenvolvimento de jogos irão enfrentar e aprender como mitigar e também irão aprender as funções de um produtor de jogos e um pouco de cada área da gestão de projetos em jogos digitais.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400399&cod_edicao=19001&numseqofeedi=1')">
                           Gestão de Projeto e Pessoa para Jogos Digitais</a></u></template>
                       </li>
                       <li key="3" class="mb-3">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Modelagem 3D para Iniciantes v2', '14/04 - 14h00', 'ICMC - Sala 5-003', 'Giuliano Lourençon', '', '#')">
-                          Modelagem 3D para Iniciantes v2</a></u></template>
+                          @click="openSheet('Modelagem 3D para Iniciantesjogos', '14/04 - 14h00', 'ICMC - Sala 5-003', 'Giuliano Lourençon', 'Introduzir o aluno aos conceitos, técnicas e ferramentas do desenvolvimento de modelagem 3D para jogos, com foco em uma aplicação prática das ferramentas utilizadas.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400365&cod_edicao=19003&numseqofeedi=1')">
+                          Modelagem 3D para Iniciantesjogos</a></u></template>
                       </li>
                       <li key="4" class="mb-1">
                         <template v-slot:activator><u><a 
-                          @click="openSheet('Unity Intermediário - Propriedades, Scriptable Objects e Eventos!', '14/04 - 14h00', 'ICMC - Sala 4-005', 'Abner Santos', '', '#')">
+                          @click="openSheet('Unity Intermediário - Propriedades, Scriptable Objects e Eventos!', '14/04 - 14h00', 'ICMC - Sala 4-005', 'Abner Santos', 'Introduzir o aluno aos problemas e soluções computacionais no domínio de jogos eletrônicos, com foco em conceitos intermediários/avançados no uso da ferramenta Unity3D para que o mesmo adquira boas práticas e melhor resolução de problemas comumente encontrados no desenvolvimento de jogos.', 'https://uspdigital.usp.br/apolo/apoObterCurso?cod_curso=550400410&cod_edicao=19001&numseqofeedi=1')">
                           Unity Intermediário - Propriedades, Scriptable Objects e Eventos!</a></u></template>
                       </li>
                     </ul>
