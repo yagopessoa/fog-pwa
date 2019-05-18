@@ -89,7 +89,7 @@
 
 <script>
   import { page } from 'vue-analytics'
-  import { getNotificationPermission } from '@/push-notification'
+  // import { getNotificationPermission } from '@/push-notification'
 
   export default {
     data () {
@@ -114,7 +114,7 @@
       }
     },
     mounted () {
-      getNotificationPermission()
+      // getNotificationPermission()
     },
     name: 'app'
   }

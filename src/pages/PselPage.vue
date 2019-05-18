@@ -24,7 +24,7 @@
             color="secondary"
             outline
             class="mx-0"
-            :disabled="sheetInfo.link==='#'"
+            disabled
           >
             Inscreva-se
             <v-icon small right>open_in_new</v-icon>
