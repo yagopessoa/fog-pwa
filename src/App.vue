@@ -136,6 +136,9 @@
   .page-area {
     width: 100%;
     height: calc(100vh - 64px);
+  }
+  .page-scroll {
+    height: 100%;
     overflow-y: auto;
   }
   @media screen and (max-width: 959px) {

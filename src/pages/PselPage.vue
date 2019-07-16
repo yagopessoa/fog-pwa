@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: #ECEFF1;">
+  <div style="background-color: #ECEFF1;" class="page-scroll">
     <v-bottom-sheet v-model="sheet">
       <v-card tile>
         <p class="title ma-0 pa-4 ">{{ sheetInfo.title }}</p>

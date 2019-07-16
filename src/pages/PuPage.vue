@@ -1,5 +1,5 @@
 <template>
-    <div class="pu-page">
+    <div class="pu-page page-scroll">
         <p class="hidden-xs-only display-3 pa-4 ma-4"><b>O JOGO</b></p>
         <p class="hidden-sm-and-up display-1 pa-4 ma-4"><b>O JOGO</b></p>
 

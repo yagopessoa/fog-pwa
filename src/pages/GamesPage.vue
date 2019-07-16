@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="games-page">
+  <v-layout class="games-page page-scroll">
     <v-flex xs12 sm10 offset-sm1>
         <v-container grid-list-lg fluid>
           <div v-if="loading" class="text-xs-center progress-div">

@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="about-page">
+  <v-layout class="about-page page-scroll">
     <v-flex xs12 sm10 offset-sm1>
       <p class="display-1 text-xs-center mt-4 pt-3">Conheça nossos membros:</p>
         <v-container grid-list-lg fluid>

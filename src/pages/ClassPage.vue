@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-scroll">
     <v-parallax class="parallax" src="https://i.ibb.co/pQBj77p/bg2.jpg">
       <div class="upper">
         <v-container class="upper-container" grid-list-md>

@@ -1,5 +1,5 @@
 <template>
-  <div id="start">
+  <div id="start" class="page-scroll">
     <v-parallax class="parallax" src="https://i.ibb.co/pQBj77p/bg2.jpg">
       <div class="upper-session">
         <v-container grid-list-md text-xs-center>
@@ -13,11 +13,14 @@
             <v-flex xs12 sm4>
               <img src="@/assets/brasao.png" class="brasao" alt="Brasão" />
             </v-flex>
-            <v-flex xs12>
+
+            <!-- BUG: investigar pq o botao de scroll nao esta funcionando (desativado por enquanto) -->
+            <!-- <v-flex xs12>
               <v-btn @click="$vuetify.goTo('#bottom')" flat color="accent" class="expand-btn">
                 <v-icon large>expand_more</v-icon>
               </v-btn>
-            </v-flex>
+            </v-flex> -->
+            
           </v-layout>
           <v-layout hidden-sm-and-up row wrap>
             <v-flex xs12 sm4>
