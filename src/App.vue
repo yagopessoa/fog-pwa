@@ -35,12 +35,12 @@
           >
             <v-list-tile-title v-text="item.title"></v-list-tile-title>
           </v-list-tile>
-          <v-list-tile 
+          <!-- <v-list-tile 
             key="ptdc"
             href="https://www.fog.icmc.usp.br/podcast"
           >
             <v-list-tile-title>Podcast</v-list-tile-title>
-          </v-list-tile>
+          </v-list-tile> -->
         </v-list>
       </v-menu>
     </v-toolbar>
@@ -69,19 +69,21 @@
             {{ item.title }}
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile 
+        <!-- <v-list-tile 
           key="ptdc"
           href="https://www.fog.icmc.usp.br/podcast"
         >
           <v-list-tile-content>
             Podcast
           </v-list-tile-content>
-        </v-list-tile>
+        </v-list-tile> -->
       </v-list>
     </v-navigation-drawer>
     <main>
       <transition name="slide-fade">
-        <router-view></router-view>
+        <div class="page-area">
+          <router-view></router-view>
+        </div>
       </transition>
     </main>
   </v-app>
@@ -102,7 +104,7 @@
           { title: 'Faça parte', link: '/psel' }
         ],
         dropdownItems: [
-          /* { title: 'Podcast', link: '/podcast' }, */
+          { title: 'Podcast', link: '/podcast' },
           { title: 'Geleia', link: '/geleia' },
           { title: 'Disciplina', link: '/disciplina' }
         ]
@@ -121,11 +123,24 @@
 </script>
 
 <style>
+  html {
+    overflow-y: hidden !important;
+  }
   .slide-fade-enter-active {
     transition: all .3s ease;
   }
   .slide-fade-enter, .slide-fade-leave-to {
     transform: translateX(15px);
     opacity: 0;
+  }
+  .page-area {
+    width: 100%;
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+  }
+  @media screen and (max-width: 959px) {
+    .page-area {
+      height: calc(100vh - 56px);
+    }
   }
 </style>
